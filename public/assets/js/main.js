@@ -136,4 +136,97 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Course Swiper Initialization
+  if (document.querySelector('.course-swiper') && window.Swiper) {
+    new window.Swiper('.course-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.course-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.course-next',
+        prevEl: '.course-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        }
+      }
+    });
+  }
+
+  // Pillars Swiper Initialization
+  if (document.querySelector('.pillars-swiper') && window.Swiper) {
+    new window.Swiper('.pillars-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.pillars-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.pillars-next',
+        prevEl: '.pillars-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        }
+      }
+    });
+  }
+
+  // Gallery Swiper Initialization
+  if (document.querySelector('.gallery-swiper') && window.Swiper) {
+    new window.Swiper('.gallery-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.gallery-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.gallery-next',
+        prevEl: '.gallery-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        }
+      }
+    });
+  }
 });

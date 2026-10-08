@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth md:text-[1vw]">
 
 <head>
@@ -17,6 +17,9 @@
   <meta property="og:description"
     content="Campus, laboratories, hospital clinical training, and student activities gallery.">
   <meta property="og:image" content="public/images/hero.webp">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Tailwind CSS & Custom Styles -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -82,7 +85,6 @@
           <div class="relative group">
             <a href="courses.html" title="Explore All Healthcare Courses"
               class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all inline-flex items-center gap-1.5">
-
               <span>Courses</span>
               <i data-lucide="chevron-down"
                 class="w-4 h-4 text-slate-400 lg:group-hover:rotate-180 transition-transform duration-300"></i>
@@ -93,7 +95,6 @@
 
                 <a href="bsc-nursing.html" title="B.Sc Nursing Degree Program"
                   class="flex items-start gap-3 p-3 rounded-2xl hover:bg-sky-50/80 transition-colors group/item">
-
                   <div>
                     <div class="text-sm font-bold text-slate-900 group-hover/item:text-sky-600">B.Sc Nursing</div>
                     <div class="text-xs text-slate-500">4 Year Degree • RUHS, RNC, INC</div>
@@ -102,7 +103,6 @@
 
                 <a href="gnm.html" title="GNM Nursing Diploma Program"
                   class="flex items-start gap-3 p-3 rounded-2xl hover:bg-teal-50/80 transition-colors group/item">
-
                   <div>
                     <div class="text-sm font-bold text-slate-900 group-hover/item:text-teal-600">GNM Nursing</div>
                     <div class="text-xs text-slate-500">3 Year Diploma • RNC, INC</div>
@@ -119,7 +119,6 @@
 
                 <a href="danp.html" title="DAN&P Ayurved Nursing Program"
                   class="flex items-start gap-3 p-3 rounded-2xl hover:bg-emerald-50/80 transition-colors group/item">
-
                   <div>
                     <div class="text-sm font-bold text-slate-900 group-hover/item:text-emerald-600">DAN&P (Ayurved)
                     </div>
@@ -141,15 +140,15 @@
             class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all">Student
             Life</a>
           <a href="gallery.html" title="Photo Gallery"
-            class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all">Gallery</a>
+            class="px-3.5 py-2.5 text-sm font-semibold text-sky-600 bg-white shadow-sm rounded-xl transition-all">Gallery</a>
           <a href="contact.html" title="Contact Us"
             class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all">Contact</a>
         </nav>
 
-        <!-- Apply Now CTA Button with Gradient Glow -->
+        <!-- Apply Now CTA Button -->
         <div class="hidden sm:flex items-center gap-3">
           <button
-            class="open-admission-modal px-6 py-3 bg-gradient-to-r from-sky-600 via-sky-500 to-teal-500 lg:hover:from-sky-700 lg:hover:to-teal-600 text-white font-extrabold text-sm rounded-2xl shadow-lg shadow-sky-500/25 lg:hover:shadow-sky-500/40 lg:hover:scale-105 transition-all flex items-center gap-2">
+            class="open-admission-modal px-5 py-2.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
             <i data-lucide="file-text" class="w-4 h-4"></i> Apply Now 2026
           </button>
         </div>
@@ -180,7 +179,7 @@
     </div>
     <div class="p-5 overflow-y-auto flex-1 space-y-3">
       <a href="index.html" title="Go to Home"
-        class="block px-4 py-2.5 rounded-xl font-semibold text-sky-600 bg-sky-50">Home</a>
+        class="block px-4 py-2.5 rounded-xl font-semibold text-slate-700 lg:hover:bg-slate-100">Home</a>
       <a href="about.html" title="About Hopewell Colleges"
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">About Us</a>
 
@@ -205,153 +204,432 @@
       <a href="student-life.html" title="Student Life & SNA"
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">Student Life</a>
       <a href="gallery.html" title="Photo Gallery"
-        class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">Gallery</a>
+        class="block px-4 py-2.5 rounded-xl font-semibold text-sky-600 bg-sky-50">Gallery</a>
       <a href="contact.html" title="Contact Us"
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">Contact</a>
     </div>
     <div class="p-5 border-t border-slate-100 bg-slate-50">
       <button
-        class="open-admission-modal w-full py-3 bg-gradient-medical text-white font-semibold text-center rounded-xl shadow-md">
+        class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-center rounded-xl shadow-md transition-all duration-300 cursor-pointer">
         Apply for Admission 2026
       </button>
     </div>
   </div>
 
   <main>
-    <!-- HERO -->
-    <section class="bg-slate-900 text-white py-16 lg:py-20 relative">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl mx-auto space-y-4">
-        <span
-          class="text-sky-400 font-semibold text-xs uppercase tracking-wider bg-sky-950 px-3 py-1 rounded-full border border-sky-800">
-          Visual Campus Tour
-        </span>
-        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Institutional Photo Gallery</h1>
-        <p class="text-slate-300 text-base sm:text-lg">
-          Take a look at our modern campus, clinical simulation labs, pharmacy workbenches, and student life activities
-          in Alwar.
+
+    <!-- CREATIVE HERO HEADER SECTION WITH BACKGROUND IMAGE -->
+    <section class="relative bg-slate-950 text-white py-16 sm:py-20 overflow-hidden">
+
+      <!-- Background Image with Dark Gradient Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="public/images/campus.webp" alt="Hopewell Colleges Photo Gallery Alwar"
+          title="Hopewell Colleges Campus Gallery" class="w-full h-full object-cover">
+        <!-- Dark Overlay Layer -->
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/80"></div>
+        <div class="absolute inset-0 bg-slate-950/30 backdrop-blur-[2px]"></div>
+      </div>
+
+      <!-- Ambient Glow Highlights -->
+      <div class="absolute inset-0 opacity-30 pointer-events-none z-0">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-sky-600 rounded-full filter blur-[130px]"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-teal-500 rounded-full filter blur-[130px]"></div>
+      </div>
+
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl space-y-4">
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-snug">
+          Photo & Media <span class="text-sky-400">Gallery</span>
+        </h1>
+        <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2"></div>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Take a visual tour of Hopewell Group of Colleges: campus grounds, nursing simulation labs, pharmacy chemistry
+          workstations, hospital ward duty, and student life activities in Alwar.
         </p>
       </div>
     </section>
 
-    <!-- GALLERY FILTER TABS & IMAGES -->
-    <section class="py-20 bg-white">
+    <!-- FEATURED CAMPUS HIGHLIGHTS SWIPER CAROUSEL SLIDER (LIGHT DESIGN) -->
+    <section class="py-16 lg:py-20 bg-slate-50 text-slate-900 relative  border-b border-slate-200/80">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            Featured Campus Showcase
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Swipe through key highlights of Hopewell Colleges' infrastructure and practical training facilities.
+          </p>
+        </div>
+
+        <!-- Swiper Slider Container -->
+        <div class="relative group/gallery-swiper">
+          <div class="swiper gallery-swiper !py-10 -my-10">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1: Nursing Simulation Lab -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="rounded-3xl overflow-hidden bg-white border border-slate-200/80 shadow-md group h-full flex flex-col justify-between card-hover">
+                  <div class="relative h-64 overflow-hidden">
+                    <img src="public/images/nursing/bsc-nursing.webp" alt="Nursing Simulation Laboratory"
+                      title="Nursing Simulation Ward"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                    </div>
+                    <span
+                      class="absolute top-4 left-4 px-3 py-1 rounded-full bg-sky-600 text-white text-xs font-bold shadow-md">Nursing
+                      Simulation</span>
+                  </div>
+                  <div class="p-6 space-y-2">
+                    <h3 class="text-lg font-bold text-slate-900">Nursing Demonstration Ward</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      Manikin simulation workstations for hands-on clinical skills development before hospital postings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Pharmacy Workbench -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="rounded-3xl overflow-hidden bg-white border border-slate-200/80 shadow-md group h-full flex flex-col justify-between card-hover">
+                  <div class="relative h-64 overflow-hidden">
+                    <img src="public/images/pharmacy/d-pharmacy.webp" alt="Pharmaceutical Science Lab"
+                      title="D.Pharmacy Station"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                    </div>
+                    <span
+                      class="absolute top-4 left-4 px-3 py-1 rounded-full bg-indigo-600 text-white text-xs font-bold shadow-md">Pharmacy
+                      Lab</span>
+                  </div>
+                  <div class="p-6 space-y-2">
+                    <h3 class="text-lg font-bold text-slate-900">Pharmaceutical Analysis Lab</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      Equipped with chemical analysis apparatus, analytical balances, and drug formulation setups.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Clinical Hospital Ward -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="rounded-3xl overflow-hidden bg-white border border-slate-200/80 shadow-md group h-full flex flex-col justify-between card-hover">
+                  <div class="relative h-64 overflow-hidden">
+                    <img src="public/images/nursing/clinical-training.webp" alt="Hospital Clinical Duty"
+                      title="Clinical Ward Duty"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                    </div>
+                    <span
+                      class="absolute top-4 left-4 px-3 py-1 rounded-full bg-teal-600 text-white text-xs font-bold shadow-md">Hospital
+                      Duty</span>
+                  </div>
+                  <div class="p-6 space-y-2">
+                    <h3 class="text-lg font-bold text-slate-900">Multi-Specialty Bedside Duty</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      Real patient care clinical training at affiliated multi-specialty government and private
+                      hospitals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Central Library -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="rounded-3xl overflow-hidden bg-white border border-slate-200/80 shadow-md group h-full flex flex-col justify-between card-hover">
+                  <div class="relative h-64 overflow-hidden">
+                    <img src="public/images/facilities/library.webp" alt="Central Medical Library"
+                      title="Central Medical Library"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                    </div>
+                    <span
+                      class="absolute top-4 left-4 px-3 py-1 rounded-full bg-sky-600 text-white text-xs font-bold shadow-md">Library</span>
+                  </div>
+                  <div class="p-6 space-y-2">
+                    <h3 class="text-lg font-bold text-slate-900">Central Medical Library</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      Quiet research zone featuring 5,000+ medical journals, textbooks, and e-learning portals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Ayurvedic Pharmacognosy Lab -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="rounded-3xl overflow-hidden bg-white border border-slate-200/80 shadow-md group h-full flex flex-col justify-between card-hover">
+                  <div class="relative h-64 overflow-hidden">
+                    <img src="public/images/ayurved/danp-ayurved.webp" alt="Ayurvedic Herbal Pharmacy Lab"
+                      title="DAN&P Lab"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                    </div>
+                    <span
+                      class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold shadow-md">Ayurved
+                      Lab</span>
+                  </div>
+                  <div class="p-6 space-y-2">
+                    <h3 class="text-lg font-bold text-slate-900">Herbal Dravyaguna Lab</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      Herbarium specimens and authentic Ayurvedic drug preparation apparatus for DAN&P students.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Web View Navigation Arrows (Visible on sm/md/lg desktop screens, hidden on mobile) -->
+          <button
+            class="gallery-prev hidden sm:flex absolute top-1/2 -translate-y-1/2 -left-4 lg:-left-5 z-30 w-12 h-12 bg-white text-slate-800 rounded-full shadow-lg border border-slate-200 items-center justify-center lg:hover:bg-sky-600 lg:hover:text-white lg:hover:border-sky-600 transition-all duration-300 cursor-pointer">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+          </button>
+
+          <button
+            class="gallery-next hidden sm:flex absolute top-1/2 -translate-y-1/2 -right-4 lg:-right-5 z-30 w-12 h-12 bg-white text-slate-800 rounded-full shadow-lg border border-slate-200 items-center justify-center lg:hover:bg-sky-600 lg:hover:text-white lg:hover:border-sky-600 transition-all duration-300 cursor-pointer">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Custom Swiper Pagination Dots (Visible for all screens) -->
+          <div class="swiper-pagination gallery-pagination mt-6 text-center block md:hidden !static"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FILTERABLE PHOTO GALLERY GRID SECTION -->
+    <section class="py-20 lg:py-24 bg-white relative">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            Explore Institutional Media Gallery
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Filter photos by category to view our campus infrastructure, clinical simulation wards, research labs, and
+            student activity highlights.
+          </p>
+        </div>
 
         <!-- Filter Tabs -->
         <div class="flex flex-wrap items-center justify-center gap-3">
           <button
-            class="gallery-filter-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-sky-600 text-white shadow-md transition-colors"
+            class="gallery-filter-btn px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-sky-600 text-white shadow-md transition-all cursor-pointer"
             data-filter="all">
             All Photos
           </button>
           <button
-            class="gallery-filter-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-white text-slate-700 lg:hover:bg-slate-100 border border-slate-200 transition-colors"
+            class="gallery-filter-btn px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 text-slate-700 lg:hover:bg-slate-200 transition-all cursor-pointer"
             data-filter="campus">
             Campus Infrastructure
           </button>
           <button
-            class="gallery-filter-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-white text-slate-700 lg:hover:bg-slate-100 border border-slate-200 transition-colors"
+            class="gallery-filter-btn px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 text-slate-700 lg:hover:bg-slate-200 transition-all cursor-pointer"
             data-filter="labs">
-            Laboratories
+            Laboratories & Wards
           </button>
           <button
-            class="gallery-filter-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-white text-slate-700 lg:hover:bg-slate-100 border border-slate-200 transition-colors"
+            class="gallery-filter-btn px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 text-slate-700 lg:hover:bg-slate-200 transition-all cursor-pointer"
             data-filter="clinical">
-            Clinical Postings
+            Clinical Duty
           </button>
           <button
-            class="gallery-filter-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-white text-slate-700 lg:hover:bg-slate-100 border border-slate-200 transition-colors"
+            class="gallery-filter-btn px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 text-slate-700 lg:hover:bg-slate-200 transition-all cursor-pointer"
             data-filter="facilities">
-            Library & Facilities
+            Facilities & Hostel
           </button>
         </div>
 
         <!-- Gallery Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <div class="gallery-item rounded-3xl overflow-hidden shadow-md border border-slate-200 group"
+          <!-- Item 1: Main Campus -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
             data-category="campus">
             <div class="relative h-64 overflow-hidden">
-              <img src="public/images/hero.webp" alt="Campus Building" title="Hopewell Main Campus Building"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+              <img src="public/images/campus.webp" alt="Hopewell Main Campus Building" title="Hopewell Main Campus"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
-                <div class="font-bold text-base">Modern Academic Building</div>
-                <div class="text-xs text-sky-300">Alwar Main Campus</div>
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span class="inline-block px-3 py-1 rounded-md bg-sky-600 text-xs font-bold w-max mb-1">Campus</span>
+                <div class="font-bold text-base">Main Academic Block</div>
+                <div class="text-xs text-slate-300">Hopewell Group of Colleges, Alwar</div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item rounded-3xl overflow-hidden shadow-md border border-slate-200 group"
+          <!-- Item 2: Hero Main -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
+            data-category="campus">
+            <div class="relative h-64 overflow-hidden">
+              <img src="public/images/hero.webp" alt="College Front View & Grounds" title="Hopewell Front View"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span
+                  class="inline-block px-3 py-1 rounded-md bg-sky-600 text-xs font-bold w-max mb-1">Infrastructure</span>
+                <div class="font-bold text-base">Front Entrance & Lawns</div>
+                <div class="text-xs text-slate-300">Eco-Friendly Campus Environment</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Nursing Lab -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
             data-category="labs">
             <div class="relative h-64 overflow-hidden">
-              <img src="public/images/nursing/bsc-nursing.webp" alt="Nursing Simulation Lab"
+              <img src="public/images/nursing/bsc-nursing.webp" alt="Nursing Simulation Ward Lab"
                 title="Nursing Foundation Lab"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span
+                  class="inline-block px-3 py-1 rounded-md bg-sky-600 text-xs font-bold w-max mb-1">Laboratory</span>
                 <div class="font-bold text-base">Nursing Simulation Ward</div>
-                <div class="text-xs text-sky-300">B.Sc Nursing Practice</div>
+                <div class="text-xs text-slate-300">Advanced Manikins & Patient Beds</div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item rounded-3xl overflow-hidden shadow-md border border-slate-200 group"
+          <!-- Item 4: GNM Nursing -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
             data-category="labs">
             <div class="relative h-64 overflow-hidden">
-              <img src="public/images/pharmacy/d-pharmacy.webp" alt="Pharmaceutical Chemistry Lab"
-                title="D.Pharmacy Lab"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+              <img src="public/images/nursing/gnm-nursing.webp" alt="GNM Practical Skills Lab"
+                title="GNM Practical Ward"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
-                <div class="font-bold text-base">Pharmaceutical Science Lab</div>
-                <div class="text-xs text-sky-300">D.Pharmacy Station</div>
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span
+                  class="inline-block px-3 py-1 rounded-md bg-teal-600 text-xs font-bold w-max mb-1">Laboratory</span>
+                <div class="font-bold text-base">GNM Nursing Skills Station</div>
+                <div class="text-xs text-slate-300">Basic & Advanced Nursing Care Practice</div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item rounded-3xl overflow-hidden shadow-md border border-slate-200 group"
+          <!-- Item 5: Pharmacy Lab -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
+            data-category="labs">
+            <div class="relative h-64 overflow-hidden">
+              <img src="public/images/pharmacy/d-pharmacy.webp" alt="Pharmaceutical Chemistry Workbench"
+                title="D.Pharmacy Lab"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span
+                  class="inline-block px-3 py-1 rounded-md bg-indigo-600 text-xs font-bold w-max mb-1">Laboratory</span>
+                <div class="font-bold text-base">Pharmaceutical Chemistry Lab</div>
+                <div class="text-xs text-slate-300">Chemical Analysis & Glassware Workstations</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Ayurved Lab -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
             data-category="labs">
             <div class="relative h-64 overflow-hidden">
               <img src="public/images/ayurved/danp-ayurved.webp" alt="Ayurvedic Herbal Pharmacy Lab" title="DAN&P Lab"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span
+                  class="inline-block px-3 py-1 rounded-md bg-emerald-600 text-xs font-bold w-max mb-1">Laboratory</span>
                 <div class="font-bold text-base">Herbal Pharmacognosy Lab</div>
-                <div class="text-xs text-emerald-300">DAN&P Ayurved Unit</div>
+                <div class="text-xs text-slate-300">DAN&P Ayurvedic Herb Preparation</div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item rounded-3xl overflow-hidden shadow-md border border-slate-200 group"
+          <!-- Item 7: Clinical Postings -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
             data-category="clinical">
             <div class="relative h-64 overflow-hidden">
-              <img src="public/images/nursing/clinical-training.webp" alt="Hospital Clinical Ward Rotation"
-                title="Hospital Duty"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+              <img src="public/images/nursing/clinical-training.webp" alt="Hospital Clinical Ward Duty"
+                title="Hospital Clinical Duty"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
-                <div class="font-bold text-base">Multi-Specialty Hospital Ward Duty</div>
-                <div class="text-xs text-sky-300">Supervised Bedside Rounds</div>
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span class="inline-block px-3 py-1 rounded-md bg-sky-600 text-xs font-bold w-max mb-1">Clinical
+                  Duty</span>
+                <div class="font-bold text-base">Multi-Specialty Hospital Ward Duties</div>
+                <div class="text-xs text-slate-300">Supervised Patient Rounds</div>
               </div>
             </div>
           </div>
 
-          <div class="gallery-item rounded-3xl overflow-hidden shadow-md border border-slate-200 group"
+          <!-- Item 8: Library -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
             data-category="facilities">
             <div class="relative h-64 overflow-hidden">
               <img src="public/images/facilities/library.webp" alt="Central Medical Library" title="Central Library"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span
+                  class="inline-block px-3 py-1 rounded-md bg-amber-600 text-xs font-bold w-max mb-1">Facilities</span>
                 <div class="font-bold text-base">Central Medical Library</div>
-                <div class="text-xs text-sky-300">Quiet Study & Research Workstations</div>
+                <div class="text-xs text-slate-300">Quiet Reading Halls & Journal Section</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9: Hostel -->
+          <div
+            class="gallery-item rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-md group transition-all duration-300 card-hover"
+            data-category="facilities">
+            <div class="relative h-64 overflow-hidden">
+              <img src="public/images/facilities/hostel.webp" alt="Student Hostel Facility" title="Hopewell Hostel"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                <span class="inline-block px-3 py-1 rounded-md bg-purple-600 text-xs font-bold w-max mb-1">Hostel</span>
+                <div class="font-bold text-base">Student Residential Hostel</div>
+                <div class="text-xs text-slate-300">Secure Living with Dining Hall</div>
               </div>
             </div>
           </div>
 
         </div>
 
+      </div>
+    </section>
+
+    <!-- SCHEDULE CAMPUS VISIT CTA SECTION -->
+    <section class="py-16 bg-slate-900 text-white relative overflow-hidden">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl space-y-6">
+
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Want to Experience Hopewell Campus in Person?
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Visit our campus at Tijara Road, Alwar to inspect our laboratories, library, and meet our faculty counselors.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <button
+            class="open-admission-modal px-8 py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-bold text-sm sm:text-base rounded-xl shadow-lg transition-all duration-300 flex items-center gap-2 cursor-pointer">
+            <i data-lucide="calendar" class="w-5 h-5"></i> Schedule Campus Visit
+          </button>
+          <a href="contact.html"
+            class="px-8 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm sm:text-base rounded-xl transition-all duration-300 flex items-center gap-2">
+            <i data-lucide="phone" class="w-5 h-5 text-sky-400"></i> Contact Help Desk
+          </a>
+        </div>
       </div>
     </section>
 
@@ -406,7 +684,7 @@
                 Courses</a></li>
             <li><a href="admissions.html" title="Admission Guidelines"
                 class="lg:hover:text-sky-400 transition-colors">Admissions 2026</a></li>
-            <li><a href="facilities.html" title="Infrastructure & Facilities"
+            <li><a href="facilities.html" title="Campus Facilities"
                 class="lg:hover:text-sky-400 transition-colors">Campus Facilities</a></li>
             <li><a href="campus.html" title="Campus Environment" class="lg:hover:text-sky-400 transition-colors">Campus
                 & Clinicals</a></li>
@@ -470,7 +748,7 @@
             </p>
             <div class="pt-3">
               <button
-                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 text-white font-extrabold text-sm sm:text-base rounded-xl transition-all shadow-md">
+                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
                 Enquire Online
               </button>
             </div>
@@ -498,6 +776,8 @@
     </div>
   </footer>
 
+  <!-- Swiper JS & Main JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="public/assets/js/main.js"></script>
 </body>
 

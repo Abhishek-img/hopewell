@@ -164,7 +164,7 @@
         <!-- Apply Now CTA Button with Gradient Glow -->
         <div class="hidden sm:flex items-center gap-3">
           <button
-            class="open-admission-modal px-6 py-3 bg-gradient-to-r from-sky-600 via-sky-500 to-teal-500 lg:hover:from-sky-700 lg:hover:to-teal-600 text-white font-extrabold text-sm rounded-2xl shadow-lg shadow-sky-500/25 lg:hover:shadow-sky-500/40 lg:hover:scale-105 transition-all flex items-center gap-2">
+            class="open-admission-modal px-5 py-2.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
             <i data-lucide="file-text" class="w-4 h-4"></i> Apply Now 2026
           </button>
         </div>
@@ -226,7 +226,7 @@
     </div>
     <div class="p-5 border-t border-slate-100 bg-slate-50">
       <button
-        class="open-admission-modal w-full py-3 bg-gradient-medical text-white font-semibold text-center rounded-xl shadow-md">
+        class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-center rounded-xl shadow-md transition-all duration-300 cursor-pointer">
         Apply for Admission 2026
       </button>
     </div>
@@ -234,23 +234,19 @@
 
   <main>
     <!-- COURSE HERO -->
-    <section class="bg-slate-900 text-white py-16 lg:py-24 relative overflow-hidden">
+    <section class="bg-slate-900 text-white py-16 relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-r from-sky-950 via-slate-900 to-slate-950"></div>
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
           <div class="lg:col-span-7 space-y-4">
             <div class="flex flex-wrap items-center gap-2">
-              <span
-                class="bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
-                Undergraduate Degree
-              </span>
               <span class="bg-slate-800 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">
                 4 Year Full-Time
               </span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
               B.Sc. Nursing <span class="text-sky-400">(Bachelor of Science in Nursing)</span>
             </h1>
 
@@ -278,7 +274,7 @@
 
             <div class="pt-4 flex items-center gap-4">
               <button
-                class="open-admission-modal px-6 py-3 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-xl text-sm transition-colors">
+                class="open-admission-modal px-6 py-3 bg-sky-500 hover:bg-sky-400 text-white font-bold rounded-xl text-sm transition-colors">
                 Apply for B.Sc Nursing
               </button>
               <a href="#curriculum" title="View Curriculum"
@@ -308,7 +304,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
           <div class="lg:col-span-7 space-y-6">
-            <h2 class="text-3xl font-extrabold text-slate-900">Course Overview & Scope</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+              Course Overview & Scope
+            </h2>
+            <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full  my-2.5"></div>
             <p class="text-slate-600 text-base leading-relaxed">
               The B.Sc. Nursing curriculum at Hopewell Colleges equips students with a strong foundation in biological
               sciences, anatomy, physiology, microbiology, pharmacology, and clinical nursing. Students gain
@@ -368,14 +367,17 @@
 
         <!-- CURRICULUM ACCORDION -->
         <div id="curriculum" class="space-y-6">
-          <h2 class="text-3xl font-extrabold text-slate-900">4-Year Course Structure</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            4-Year Course Structure
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full  my-2.5"></div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <span class="text-xs font-bold text-sky-600 uppercase">Year 1</span>
               <h3 class="text-lg font-bold text-slate-900">Foundational Medical Sciences</h3>
-              <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+              <ul class="md:text-sm text-xs text-slate-600 space-y-1.5 list-disc list-inside">
                 <li>Anatomy & Physiology</li>
                 <li>Nutrition & Biochemistry</li>
                 <li>Nursing Foundation & First Aid</li>
@@ -387,7 +389,7 @@
             <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <span class="text-xs font-bold text-sky-600 uppercase">Year 2</span>
               <h3 class="text-lg font-bold text-slate-900">Core Clinical Nursing</h3>
-              <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+              <ul class="md:text-sm text-xs text-slate-600 space-y-1.5 list-disc list-inside">
                 <li>Medical-Surgical Nursing I</li>
                 <li>Pharmacology, Pathology, Genetics</li>
                 <li>Community Health Nursing I</li>
@@ -399,7 +401,7 @@
             <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <span class="text-xs font-bold text-sky-600 uppercase">Year 3</span>
               <h3 class="text-lg font-bold text-slate-900">Specialized Patient Care</h3>
-              <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+              <ul class="md:text-sm text-xs text-slate-600 space-y-1.5 list-disc list-inside">
                 <li>Medical-Surgical Nursing II</li>
                 <li>Child Health Nursing (Pediatrics)</li>
                 <li>Mental Health Nursing (Psychiatry)</li>
@@ -411,7 +413,7 @@
             <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
               <span class="text-xs font-bold text-sky-600 uppercase">Year 4</span>
               <h3 class="text-lg font-bold text-slate-900">Advanced Practice & Internship</h3>
-              <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+              <ul class="md:text-sm text-xs text-slate-600 space-y-1.5 list-disc list-inside">
                 <li>Midwifery & Obstetrical Nursing</li>
                 <li>Community Health Nursing II</li>
                 <li>Management of Nursing Services</li>
@@ -424,15 +426,19 @@
 
         <!-- CAREER OPPORTUNITIES -->
         <div class="space-y-6 pt-6 border-t border-slate-200">
-          <h2 class="text-3xl font-extrabold text-slate-900">Career Opportunities for B.Sc Nurses</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            Career Opportunities for B.Sc Nurses
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full  my-2.5"></div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
               <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold">
                 <i data-lucide="hospital" class="w-5 h-5"></i>
               </div>
-              <h3 class="font-bold text-slate-900 text-sm">Staff Nurse / ICU Nurse</h3>
-              <p class="text-xs text-slate-500">Government and private multi-specialty hospitals, ICUs, and critical
+              <h3 class="font-bold text-slate-900 md:text-lg text-base">Staff Nurse / ICU Nurse</h3>
+              <p class="md:text-sm text-xs text-slate-500">Government and private multi-specialty hospitals, ICUs, and
+                critical
                 care units.</p>
             </div>
 
@@ -441,8 +447,9 @@
                 class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
                 <i data-lucide="shield-check" class="w-5 h-5"></i>
               </div>
-              <h3 class="font-bold text-slate-900 text-sm">Government Nursing Officer</h3>
-              <p class="text-xs text-slate-500">AIIMS NORCET, Military Nursing Service (MNS), Railway Hospitals, and
+              <h3 class="font-bold text-slate-900 md:text-lg text-base">Government Nursing Officer</h3>
+              <p class="md:text-sm text-xs text-slate-500">AIIMS NORCET, Military Nursing Service (MNS), Railway
+                Hospitals, and
                 State PSC roles.</p>
             </div>
 
@@ -451,8 +458,9 @@
                 class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold">
                 <i data-lucide="graduation-cap" class="w-5 h-5"></i>
               </div>
-              <h3 class="font-bold text-slate-900 text-sm">Clinical Tutor / Educator</h3>
-              <p class="text-xs text-slate-500">Teaching faculty in nursing colleges and clinical training centers after
+              <h3 class="font-bold text-slate-900 md:text-lg text-base">Clinical Tutor / Educator</h3>
+              <p class="md:text-sm text-xs text-slate-500">Teaching faculty in nursing colleges and clinical training
+                centers after
                 M.Sc Nursing.</p>
             </div>
 
@@ -461,8 +469,9 @@
                 class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center font-bold">
                 <i data-lucide="globe" class="w-5 h-5"></i>
               </div>
-              <h3 class="font-bold text-slate-900 text-sm">Global Nursing Opportunities</h3>
-              <p class="text-xs text-slate-500">High demand in NHS UK, NCLEX-RN USA, Middle East, Germany & Canada.</p>
+              <h3 class="font-bold text-slate-900 md:text-lg text-base">Global Nursing Opportunities</h3>
+              <p class="md:text-sm text-xs text-slate-500">High demand in NHS UK, NCLEX-RN USA, Middle East, Germany &
+                Canada.</p>
             </div>
 
           </div>
@@ -586,7 +595,7 @@
             </p>
             <div class="pt-3">
               <button
-                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 text-white font-extrabold text-sm sm:text-base rounded-xl transition-all shadow-md">
+                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
                 Enquire Online
               </button>
             </div>

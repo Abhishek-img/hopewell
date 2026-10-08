@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth md:text-[1vw]">
 
 <head>
@@ -13,7 +13,7 @@
   <meta name="author" content="Hopewell Educational Group">
   <link rel="canonical" href="https://www.hopewellcolleges.edu.in/gnm.html">
 
-  <meta property="og:title" content="GNM General Nursing & Midwifery | Hopewell Colleges">
+  <meta property="og:title" content="GNM General Nursing & Midwifery | Hopewell Colleges Alwar">
   <meta property="og:description"
     content="3-year diploma in nursing, clinical care, midwifery and community healthcare. RNC & INC approved.">
   <meta property="og:image" content="public/images/nursing/gnm-nursing.webp">
@@ -21,6 +21,9 @@
   <!-- Tailwind CSS & Custom Styles -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="public/assets/css/styles.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -55,20 +58,20 @@
     </div>
   </div>
 
-  <!-- Sticky Creative Glassmorphism Header -->
+  <!-- Sticky Creative Header -->
   <header
     class="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-lg shadow-sky-900/5 transition-all">
     <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-2 sm:py-3 min-h-[6.5rem] sm:min-h-[7.5rem] lg:min-h-[8.5rem]">
 
-        <!-- Clean Direct Logo (NO Background Box) -->
+        <!-- Logo -->
         <a href="index.html" title="Hopewell Colleges Homepage" class="flex items-center group py-1 shrink-0">
           <img src="public/images/hopewellLogo.webp" alt="Hopewell Group of Colleges Logo"
             title="Hopewell Colleges Alwar" loading="eager" fetchpriority="high"
             class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-h-28 object-contain filter drop-shadow-md lg:hover:scale-105 transition-transform duration-300">
         </a>
 
-        <!-- Desktop Navigation with Creative Micro-Interactions -->
+        <!-- Desktop Navigation -->
         <nav
           class="hidden lg:flex items-center gap-1 xl:gap-2 bg-slate-100/70 p-1.5 rounded-2xl border border-slate-200/60 shadow-inner">
           <a href="index.html" title="Go to Home"
@@ -78,11 +81,10 @@
             class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all">About
             Us</a>
 
-          <!-- Creative Courses Dropdown with Icons -->
+          <!-- Courses Dropdown -->
           <div class="relative group">
             <a href="courses.html" title="Explore All Healthcare Courses"
-              class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all inline-flex items-center gap-1.5">
-
+              class="px-3.5 py-2.5 text-sm font-semibold text-sky-600 bg-white shadow-sm rounded-xl transition-all inline-flex items-center gap-1.5">
               <span>Courses</span>
               <i data-lucide="chevron-down"
                 class="w-4 h-4 text-slate-400 lg:group-hover:rotate-180 transition-transform duration-300"></i>
@@ -90,25 +92,20 @@
             <div
               class="absolute left-0 top-full pt-3 w-80 hidden lg:group-hover:block z-50 transform origin-top transition-all">
               <div class="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-200/80 p-3 space-y-1">
-
                 <a href="bsc-nursing.html" title="B.Sc Nursing Degree Program"
                   class="flex items-start gap-3 p-3 rounded-2xl hover:bg-sky-50/80 transition-colors group/item">
-
                   <div>
                     <div class="text-sm font-bold text-slate-900 group-hover/item:text-sky-600">B.Sc Nursing</div>
                     <div class="text-xs text-slate-500">4 Year Degree • RUHS, RNC, INC</div>
                   </div>
                 </a>
-
                 <a href="gnm.html" title="GNM Nursing Diploma Program"
-                  class="flex items-start gap-3 p-3 rounded-2xl hover:bg-teal-50/80 transition-colors group/item">
-
+                  class="flex items-start gap-3 p-3 rounded-2xl bg-sky-50/90 transition-colors group/item">
                   <div>
-                    <div class="text-sm font-bold text-slate-900 group-hover/item:text-teal-600">GNM Nursing</div>
+                    <div class="text-sm font-bold text-sky-600">GNM Nursing</div>
                     <div class="text-xs text-slate-500">3 Year Diploma • RNC, INC</div>
                   </div>
                 </a>
-
                 <a href="d-pharmacy.html" title="D.Pharmacy Diploma Program"
                   class="flex items-start gap-3 p-3 rounded-2xl hover:bg-indigo-50/80 transition-colors group/item">
                   <div>
@@ -116,17 +113,14 @@
                     <div class="text-xs text-slate-500">2 Year Diploma • RUHS, PCI</div>
                   </div>
                 </a>
-
                 <a href="danp.html" title="DAN&P Ayurved Nursing Program"
                   class="flex items-start gap-3 p-3 rounded-2xl hover:bg-emerald-50/80 transition-colors group/item">
-
                   <div>
                     <div class="text-sm font-bold text-slate-900 group-hover/item:text-emerald-600">DAN&P (Ayurved)
                     </div>
                     <div class="text-xs text-slate-500">2.6 Year Diploma • DSRRAU</div>
                   </div>
                 </a>
-
               </div>
             </div>
           </div>
@@ -146,10 +140,10 @@
             class="px-3.5 py-2.5 text-sm font-semibold text-slate-700 lg:hover:text-sky-600 lg:hover:bg-white/80 rounded-xl transition-all">Contact</a>
         </nav>
 
-        <!-- Apply Now CTA Button with Gradient Glow -->
+        <!-- Apply Button -->
         <div class="hidden sm:flex items-center gap-3">
           <button
-            class="open-admission-modal px-6 py-3 bg-gradient-to-r from-sky-600 via-sky-500 to-teal-500 lg:hover:from-sky-700 lg:hover:to-teal-600 text-white font-extrabold text-sm rounded-2xl shadow-lg shadow-sky-500/25 lg:hover:shadow-sky-500/40 lg:hover:scale-105 transition-all flex items-center gap-2">
+            class="open-admission-modal px-5 py-2.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
             <i data-lucide="file-text" class="w-4 h-4"></i> Apply Now 2026
           </button>
         </div>
@@ -164,7 +158,7 @@
     </div>
   </header>
 
-  <!-- Mobile Menu Drawer Overlay -->
+  <!-- Mobile Menu Drawer -->
   <div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden transition-opacity">
   </div>
   <div id="mobile-menu-drawer"
@@ -180,7 +174,7 @@
     </div>
     <div class="p-5 overflow-y-auto flex-1 space-y-3">
       <a href="index.html" title="Go to Home"
-        class="block px-4 py-2.5 rounded-xl font-semibold text-sky-600 bg-sky-50">Home</a>
+        class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">Home</a>
       <a href="about.html" title="About Hopewell Colleges"
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">About Us</a>
 
@@ -189,7 +183,7 @@
         <a href="bsc-nursing.html" title="B.Sc Nursing"
           class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
         <a href="gnm.html" title="GNM Diploma"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
+          class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50">GNM Nursing (3 Yrs)</a>
         <a href="d-pharmacy.html" title="D.Pharmacy"
           class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
         <a href="danp.html" title="DAN&P Ayurved Nursing"
@@ -211,65 +205,87 @@
     </div>
     <div class="p-5 border-t border-slate-100 bg-slate-50">
       <button
-        class="open-admission-modal w-full py-3 bg-gradient-medical text-white font-semibold text-center rounded-xl shadow-md">
+        class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-center rounded-xl shadow-md transition-all duration-300 cursor-pointer">
         Apply for Admission 2026
       </button>
     </div>
   </div>
 
   <main>
-    <!-- HERO -->
-    <section class="bg-slate-900 text-white py-16 lg:py-24 relative overflow-hidden">
+    <!-- GNM COURSE HERO SECTION WITH IMAGE OVERLAY -->
+    <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden border-b border-slate-800/80">
+      <div class="absolute inset-0 z-0">
+        <img src="public/images/nursing/gnm-nursing.webp" alt="GNM Nursing Midwifery Clinical Practice"
+          title="GNM Nursing Course at Hopewell Colleges" loading="eager" fetchpriority="high"
+          class="w-full h-full object-cover object-center filter brightness-[0.35] contrast-125 scale-105">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60"></div>
+      </div>
+
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-          <div class="lg:col-span-7 space-y-4">
-            <div class="flex items-center gap-2">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="flex flex-wrap items-center gap-2">
               <span
-                class="bg-teal-500/20 text-teal-300 border border-teal-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
-                Diploma Program
+                class="bg-sky-500/20 text-sky-300 border border-sky-400/30 text-xs font-bold px-3 py-1 rounded-full uppercase">
+                3 Year Diploma Program
               </span>
               <span class="bg-slate-800 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">
-                3 Year Course
+                RNC & INC Approved
               </span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
-              GNM <span class="text-teal-400">(General Nursing and Midwifery)</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
+              GNM Nursing <span class="text-sky-400">(General Nursing & Midwifery)</span>
             </h1>
 
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-              GNM is a professional nursing diploma program focused on bedside clinical care, maternal & child health,
-              community health service, and patient recovery support.
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+              A 3-year professional nursing diploma focused on bedside clinical care, maternal & child healthcare,
+              emergency room procedures, and community health services.
             </p>
 
-            <div class="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800 text-xs">
-              <div>
-                <div class="text-slate-400 font-medium">State Recognition</div>
-                <div class="text-white font-bold">RNC Jaipur</div>
+            <!-- Quick Specs Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 border-t border-slate-800 text-xs">
+              <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                <div class="text-slate-400 font-medium">State Registration</div>
+                <div class="text-sky-400 font-bold text-sm mt-0.5">RNC Jaipur</div>
               </div>
-              <div>
-                <div class="text-slate-400 font-medium">National Apex Council</div>
-                <div class="text-white font-bold">INC New Delhi</div>
+              <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                <div class="text-slate-400 font-medium">National Body</div>
+                <div class="text-sky-400 font-bold text-sm mt-0.5">INC New Delhi</div>
               </div>
-              <div>
+              <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 col-span-2 sm:col-span-1">
                 <div class="text-slate-400 font-medium">Eligibility Stream</div>
-                <div class="text-white font-bold">10+2 Any Stream (40%)</div>
+                <div class="text-white font-bold text-sm mt-0.5">10+2 Any Stream (40%)</div>
               </div>
             </div>
 
-            <div class="pt-4">
+            <div class="pt-4 flex flex-wrap items-center gap-4">
               <button
-                class="open-admission-modal px-6 py-3 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-xl text-sm transition-colors">
-                Apply for GNM Nursing
+                class="open-admission-modal px-7 py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
+                <i data-lucide="file-text" class="w-4.5 h-4.5"></i>
+                <span>Apply for GNM Nursing 2026</span>
               </button>
+
+              <a href="#curriculum" title="View GNM 3-Year Curriculum"
+                class="px-7 py-3.5 bg-slate-900/90 lg:hover:bg-slate-800 lg:hover:border-sky-500/50 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-slate-900/50 active:scale-95 text-white border border-slate-700 font-semibold text-sm sm:text-base rounded-xl transition-all duration-300 flex items-center gap-2 shadow-md cursor-pointer">
+                <span>View Syllabus</span>
+                <i data-lucide="arrow-down" class="w-4 h-4 text-sky-400"></i>
+              </a>
             </div>
           </div>
 
           <div class="lg:col-span-5">
-            <div class="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl">
+            <div class="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-950 group">
               <img src="public/images/nursing/gnm-nursing.webp" alt="GNM nursing training session"
-                title="GNM Training at Hopewell Colleges" class="w-full h-auto object-cover">
+                title="GNM Training at Hopewell Colleges" loading="eager"
+                class="w-full h-auto object-cover filter brightness-100 contrast-105 group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md p-4 rounded-2xl border border-slate-700">
+                <div class="text-sm font-bold text-white">Direct Bedside Ward Rotation</div>
+                <div class="text-xs text-sky-400 font-medium">100% Practical Training in Multi-Specialty Hospitals</div>
+              </div>
             </div>
           </div>
 
@@ -277,59 +293,69 @@
       </div>
     </section>
 
-    <!-- OVERVIEW & ELIGIBILITY -->
-    <section class="py-20 bg-white">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <!-- COURSE OVERVIEW & ELIGIBILITY SECTION -->
+    <section class="py-20 lg:py-24 bg-white relative">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
           <div class="lg:col-span-7 space-y-6">
-            <h2 class="text-3xl font-extrabold text-slate-900">GNM Course Overview</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+              GNM Course Overview & Scope
+            </h2>
+            <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full my-2.5"></div>
+
             <p class="text-slate-600 text-base leading-relaxed">
-              General Nursing and Midwifery (GNM) is designed to produce frontline clinical nurses who can operate
-              effectively in hospitals, primary health centers (PHCs), maternal wards, and emergency care units.
-            </p>
-            <p class="text-slate-600 text-base leading-relaxed">
-              At Hopewell Colleges, GNM students undergo intensive clinical rotations in general medicine, surgery,
-              pediatrics, gynecology, and community health camps.
+              General Nursing and Midwifery (GNM) is a comprehensive 3-year diploma program designed to produce
+              competent frontline healthcare professionals. The program covers basic anatomy, physiology, microbiology,
+              pharmacology, medical-surgical nursing, pediatrics, mental health, and midwifery.
             </p>
 
-            <div class="p-6 rounded-2xl bg-teal-50 border border-teal-100 space-y-3">
-              <h3 class="font-bold text-teal-950 text-base flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-5 h-5 text-teal-600"></i> Council Approvals & Council
-                Registration
+            <p class="text-slate-600 text-base leading-relaxed">
+              At Hopewell Colleges, GNM students undergo intensive clinical postings in multi-specialty hospitals across
+              Alwar. Students practice bedside patient monitoring, wound dressing, medication administration, maternal
+              delivery care, and community healthcare drives.
+            </p>
+
+            <div class="p-6 rounded-2xl bg-sky-50/80 border border-sky-200/70 space-y-3">
+              <h3 class="font-bold text-sky-950 text-base flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-5 h-5 text-sky-600"></i> Council Registrations & Licensing
               </h3>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                Recognized by Rajasthan Nursing Council (RNC), Jaipur and Indian Nursing Council (INC), New Delhi.
-                Graduates receive full eligibility for state RNC registration as Registered Nurse & Registered Midwife
-                (RN & RM).
+                Fully recognized by the Rajasthan Nursing Council (RNC), Jaipur and Indian Nursing Council (INC), New
+                Delhi. Upon course completion, graduates register as Registered Nurse & Registered Midwife (RN & RM).
               </p>
             </div>
           </div>
 
-          <div class="lg:col-span-5 bg-slate-50 p-8 rounded-3xl border border-slate-200/80 space-y-6">
+          <!-- Eligibility Box -->
+          <div class="lg:col-span-5 bg-slate-50 p-8 rounded-3xl border border-slate-200/80 space-y-6 shadow-sm">
             <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
-              <i data-lucide="check-circle-2" class="w-6 h-6 text-teal-600"></i> GNM Eligibility Criteria
+              <i data-lucide="check-circle-2" class="w-6 h-6 text-sky-600"></i> GNM Eligibility Criteria
             </h3>
 
             <div class="space-y-4 text-xs sm:text-sm text-slate-700">
-              <div class="pb-3 border-b border-slate-200">
-                <span class="font-bold text-slate-900 block">Educational Qualification:</span>
-                10+2 passed from a recognized board in any stream (Science, Arts, or Commerce).
+              <div class="pb-3 border-b border-slate-200 space-y-1">
+                <span class="font-bold text-slate-900 block text-sm">Educational Qualification:</span>
+                10+2 passed from a recognized educational board in any stream (Science, Arts, or Commerce).
               </div>
-              <div class="pb-3 border-b border-slate-200">
-                <span class="font-bold text-slate-900 block">Minimum Qualifying Marks:</span>
+              <div class="pb-3 border-b border-slate-200 space-y-1">
+                <span class="font-bold text-slate-900 block text-sm">Minimum Qualifying Marks:</span>
                 Minimum 40% aggregate marks in 10+2.
               </div>
-              <div>
-                <span class="font-bold text-slate-900 block">Age Limit:</span>
-                Minimum 17 years completed as of 31st December.
+              <div class="pb-3 border-b border-slate-200 space-y-1">
+                <span class="font-bold text-slate-900 block text-sm">Age Criteria:</span>
+                Minimum 17 years completed as of 31st December of the admission year.
+              </div>
+              <div class="space-y-1">
+                <span class="font-bold text-slate-900 block text-sm">Gender Eligibility:</span>
+                Open for both male and female candidates.
               </div>
             </div>
 
             <button
-              class="open-admission-modal w-full py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-xl text-sm transition-colors">
-              Apply for GNM Seats
+              class="open-admission-modal w-full py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+              Apply for GNM Seat 2026
             </button>
           </div>
 
@@ -338,17 +364,324 @@
       </div>
     </section>
 
+    <!-- 3-YEAR DETAILED CURRICULUM ACCORDION / GRID -->
+    <section id="curriculum" class="py-20 lg:py-24 bg-slate-100/80 border-y border-slate-200/60 relative">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            3-Year Course Structure & Syllabus
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Standardized curriculum following Indian Nursing Council (INC) & RNC guidelines with practical ward
+            postings.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Year 1 -->
+          <div
+            class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-sm flex items-center justify-center mb-2">
+                YR 1
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Foundational Health Sciences</h3>
+              <p class="text-slate-500 text-xs mt-1 font-medium">Theory & Simulation Ward Basics</p>
+
+              <ul class="mt-4 text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside">
+                <li>Anatomy & Physiology</li>
+                <li>Microbiology</li>
+                <li>Psychology & Sociology</li>
+                <li>Fundamentals of Nursing & First Aid</li>
+                <li>Community Health Nursing I & Hygiene</li>
+                <li>Environmental Hygiene & Nutrition</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600">
+              Includes Clinical Ward Postings
+            </div>
+          </div>
+
+          <!-- Year 2 -->
+          <div
+            class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-teal-100 text-teal-600 font-extrabold text-sm flex items-center justify-center mb-2">
+                YR 2
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Medical-Surgical & Special Care</h3>
+              <p class="text-slate-500 text-xs mt-1 font-medium">Hospital Ward & ICU Rotations</p>
+
+              <ul class="mt-4 text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside">
+                <li>Medical-Surgical Nursing I (Internal Medicine)</li>
+                <li>Medical-Surgical Nursing II (Surgical Wards)</li>
+                <li>Mental Health & Psychiatric Nursing</li>
+                <li>Child Health Nursing (Pediatric Wards)</li>
+                <li>Pharmacology & Drug Administration</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-teal-600">
+              Includes ICU & OT Rotation
+            </div>
+          </div>
+
+          <!-- Year 3 -->
+          <div
+            class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 font-extrabold text-sm flex items-center justify-center mb-2">
+                YR 3
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Midwifery & Clinical Internship</h3>
+              <p class="text-slate-500 text-xs mt-1 font-medium">Maternal Wards & 6-Month Internship</p>
+
+              <ul class="mt-4 text-xs sm:text-sm text-slate-600 space-y-2 list-disc list-inside">
+                <li>Midwifery & Gynecological Nursing</li>
+                <li>Community Health Nursing II</li>
+                <li>Educational Media & Nursing Administration</li>
+                <li>6-Month Mandatory Clinical Ward Internship</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-emerald-600">
+              6 Months Full Hospital Internship
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAREER OPPORTUNITIES & JOB ROLES GRID -->
+    <section class="py-20 lg:py-24 bg-white relative">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            Career Pathways & Job Opportunities
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
+          <p class="text-slate-600 text-base leading-relaxed">
+            GNM diploma holders enjoy immediate employability across government health departments, private
+            multi-specialty hospitals, and community health centers.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Role 1 -->
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-3 card-hover">
+            <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-600 flex items-center justify-center">
+              <i data-lucide="hospital" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Staff Nurse / Ward Sister</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Managing general patient wards, ICU beds, emergency trauma care, and assisting doctors in corporate
+              hospitals.
+            </p>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-3 card-hover">
+            <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-600 flex items-center justify-center">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Community Health Officer (CHO)</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Serving in Government Primary Health Centers (PHCs), sub-centers, and rural health missions across
+              Rajasthan.
+            </p>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-3 card-hover">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center">
+              <i data-lucide="baby" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Maternal & Child Nurse</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Specialized midwife care in maternity homes, labor rooms, pediatric wards, and neonatal ICUs (NICU).
+            </p>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-3 card-hover">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Post-Basic B.Sc Nursing Entry</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Eligible to pursue 2-Year Post-Basic B.Sc Nursing degree to elevate career status to M.Sc & Nursing
+              Superintendent.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CLINICAL TRAINING SHOWCASE -->
+    <section class="py-20 lg:py-24 bg-slate-900 text-white relative">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 text-sky-400 text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="activity" class="w-4 h-4"></i> Hospital Ward Attachments
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-snug">
+              Hands-on Clinical Rotation in Alwar Multi-Specialty Hospitals
+            </h2>
+            <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full my-2.5"></div>
+
+            <p class="text-slate-300 text-base leading-relaxed">
+              Hopewell Colleges maintains active clinical training affiliations with top multi-specialty hospitals in
+              Alwar. Students practice direct patient monitoring, catheterization, IV therapy, surgical prep, and
+              post-operative recovery care under medical guidance.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300 pt-2">
+              <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                <span>General Medicine & Surgical Wards</span>
+              </div>
+              <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                <span>Labor Room & Delivery Midwifery</span>
+              </div>
+              <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                <span>Intensive Care Unit (ICU) & OT</span>
+              </div>
+              <div class="flex items-center gap-2.5 bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                <span>Pediatric & Neonatal Wards (NICU)</span>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="campus.html" title="Explore Hospital Clinical Exposure"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold rounded-xl text-sm transition-all duration-300 shadow-md">
+                <span>View Clinical Attachments</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-950">
+              <img src="public/images/nursing/clinical-training.webp" alt="Nursing students clinical ward rotation"
+                title="Clinical Hospital Training" loading="lazy" class="w-full h-auto object-cover">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-sky-900 via-slate-900 to-slate-950 text-white relative overflow-hidden">
+      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+          Secure Your Seat in GNM Nursing Batch 2026
+        </h2>
+        <p class="text-slate-300 text-base max-w-2xl mx-auto leading-relaxed">
+          Approved by RNC Jaipur & INC New Delhi. Apply now for direct admissions or visit our Alwar campus cell.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
+          <button
+            class="open-admission-modal px-8 py-4 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+            Apply Online for GNM 2026
+          </button>
+          <a href="contact.html" title="Contact Admissions Cell"
+            class="px-8 py-4 bg-slate-900/90 lg:hover:bg-slate-800 lg:hover:border-sky-500/50 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-slate-900/50 active:scale-95 text-white border border-slate-700 font-semibold text-base rounded-xl transition-all duration-300 cursor-pointer">
+            Contact Admission Office
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- QUICK ADMISSION MODAL -->
+  <div id="admission-modal"
+    class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div
+      class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 max-h-[90vh] overflow-y-auto">
+      <button id="close-admission-modal" title="Close Admission Form"
+        class="absolute top-6 right-6 text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <span class="text-sky-600 text-xs font-bold uppercase tracking-wider">Direct Admission Enquiry</span>
+        <h3 class="text-2xl font-extrabold text-slate-900">Apply to Hopewell Colleges</h3>
+        <p class="text-xs text-slate-500">Fill your details below and our admission counselor will call you within 24
+          hours.</p>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+          <input type="text" required placeholder="Enter student's full name"
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Phone *</label>
+            <input type="tel" required placeholder="10-digit mobile number"
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+            <input type="email" placeholder="student@example.com"
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Select Program *</label>
+          <select required
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-white">
+            <option value="">-- Choose Course --</option>
+            <option value="bsc-nursing">B.Sc. Nursing (4 Years Degree)</option>
+            <option value="gnm" selected>GNM Nursing (3 Years Diploma)</option>
+            <option value="d-pharmacy">D.Pharmacy (2 Years Diploma)</option>
+            <option value="danp">DAN&P Ayurved Nursing (2.6 Years Diploma)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">City / District</label>
+          <input type="text" placeholder="e.g. Alwar, Jaipur, Delhi"
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+        </div>
+
+        <button type="submit"
+          class="w-full py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+          Submit Application Request
+        </button>
+      </form>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 relative overflow-hidden">
     <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <!-- Main Footer Flexbox Container: 1 Single Line on Desktop (lg) with perfect spacing -->
+      <!-- Main Footer Flexbox Container -->
       <div
         class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap justify-between items-start gap-8 lg:gap-6 pb-12 border-b border-slate-800/80">
 
-        <!-- Column 1: Brand Info (Tailwind w-full lg:w-[30%]) -->
+        <!-- Column 1: Brand Info -->
         <div class="w-full md:w-5/12 lg:w-[30%] space-y-4 shrink-0 pr-0 lg:pr-2">
           <div class="flex items-center gap-3">
             <div
@@ -377,7 +710,7 @@
           </div>
         </div>
 
-        <!-- Column 2: Quick Links (Tailwind w-full sm:w-1/2 lg:w-[16%]) -->
+        <!-- Column 2: Quick Links -->
         <div class="w-full sm:w-1/2 md:w-3/12 lg:w-[16%] space-y-4 shrink-0">
           <h3 class="text-base sm:text-lg font-extrabold text-white uppercase tracking-wide">Quick Links</h3>
           <ul class="space-y-2.5 text-sm sm:text-base font-medium">
@@ -402,7 +735,7 @@
           </ul>
         </div>
 
-        <!-- Column 3: Courses Offered (Tailwind w-full sm:w-1/2 lg:w-[22%]) -->
+        <!-- Column 3: Courses Offered -->
         <div class="w-full sm:w-1/2 md:w-4/12 lg:w-[22%] space-y-4 shrink-0">
           <h3 class="text-base sm:text-lg font-extrabold text-white uppercase tracking-wide">Courses Offered</h3>
           <ul class="space-y-3 text-sm sm:text-base font-medium">
@@ -435,7 +768,7 @@
           </ul>
         </div>
 
-        <!-- Column 4: Admission Office (Tailwind w-full lg:w-[24%]) -->
+        <!-- Column 4: Admission Office -->
         <div class="w-full md:w-5/12 lg:w-[24%] space-y-4 shrink-0">
           <h3 class="text-base sm:text-lg font-extrabold text-white uppercase tracking-wide">Admission Office</h3>
           <div class="text-sm sm:text-base space-y-3 text-slate-300">
@@ -453,7 +786,7 @@
             </p>
             <div class="pt-3">
               <button
-                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 text-white font-extrabold text-sm sm:text-base rounded-xl transition-all shadow-md">
+                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
                 Enquire Online
               </button>
             </div>
@@ -462,7 +795,7 @@
 
       </div>
 
-      <!-- Copyright & Bottom Links Flex Container -->
+      <!-- Copyright & Bottom Links -->
       <div
         class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm sm:text-base text-slate-400 font-medium">
         <div>
@@ -481,6 +814,8 @@
     </div>
   </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="public/assets/js/main.js"></script>
 </body>
 

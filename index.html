@@ -32,6 +32,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="public/assets/css/styles.css">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -196,7 +199,7 @@
         <!-- Apply Now CTA Button with Gradient Glow -->
         <div class="hidden sm:flex items-center gap-3">
           <button
-            class="open-admission-modal px-6 py-3 bg-gradient-to-r from-sky-600 via-sky-500 to-teal-500 lg:hover:from-sky-700 lg:hover:to-teal-600 text-white font-extrabold text-sm rounded-2xl shadow-lg shadow-sky-500/25 lg:hover:shadow-sky-500/40 lg:hover:scale-105 transition-all flex items-center gap-2">
+            class="open-admission-modal px-5 py-2.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
             <i data-lucide="file-text" class="w-4 h-4"></i> Apply Now 2026
           </button>
         </div>
@@ -258,85 +261,88 @@
     </div>
     <div class="p-5 border-t border-slate-100 bg-slate-50">
       <button
-        class="open-admission-modal w-full py-3 bg-gradient-medical text-white font-semibold text-center rounded-xl shadow-md">
+        class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-center rounded-xl shadow-md transition-all duration-300 cursor-pointer">
         Apply for Admission 2026
       </button>
     </div>
   </div>
 
   <main>
-    <!-- HERO SECTION (Creative & Compact with College Nursing Background Image Overlay) -->
-    <section class="relative bg-slate-950 text-white overflow-hidden py-10 lg:py-14 border-b border-slate-800/80">
-      
-      <!-- Full Bleed College Nursing Background Image with High-End Dark Gradients -->
+    <!-- HERO SECTION (Dark Overlay on Background Image, Ultra Creative & Clean) -->
+    <section class="relative bg-slate-950 text-white overflow-hidden py-12 lg:py-16 border-b border-slate-800/80">
+
+      <!-- Real Campus Background Image with Dark Overlay Layer -->
       <div class="absolute inset-0 z-0">
         <img src="public/images/hero.webp" alt="Hopewell Colleges Campus and Nursing Students"
           title="Hopewell Group of Colleges Alwar" loading="eager" fetchpriority="high"
-          class="w-full h-full object-cover object-center filter brightness-[0.35] contrast-125 scale-105 transition-transform duration-1000">
-        <!-- Overlay Gradients for Superior Contrast & Reading Clarity -->
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/75"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60"></div>
-        <!-- Ambient Radial Glows -->
-        <div class="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 right-10 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
-        <!-- Grid Pattern Overlay -->
-        <div class="absolute inset-0 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:28px_28px] opacity-10 pointer-events-none"></div>
+          class="w-full h-full object-cover object-center filter contrast-110">
+
+        <!-- Dark Overlay Layer (Pore background par dark layer layer overlay) -->
+        <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-[2px]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/70"></div>
       </div>
 
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
           <!-- Left Column: Copy & CTAs -->
-          <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
 
-            <!-- Eyebrow Pill Badge -->
-            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-sky-500/15 border border-sky-400/30 text-sky-300 text-xs font-bold tracking-wider uppercase shadow-inner">
-              <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-              <span>Premier Healthcare Institution • Alwar</span>
-            </div>
-
-            <!-- Main Dynamic Heading -->
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
-              Learn. Care. Lead.<br>
-              <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-300 drop-shadow-sm">
-                Build a Career in Healthcare.
-              </span>
+            <!-- Main Dynamic Solid Heading (NO rainbow gradient) -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
+              Learn. Care. Lead.
+              <span class="text-sky-400">Build Your Career in Healthcare.</span>
             </h1>
 
             <!-- Concise Subtext -->
-            <p class="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Empowering future healthcare professionals with state-of-the-art nursing simulation labs, clinical hospital wards, and recognized degrees in Nursing, Pharmacy & Ayurved.
+            <p
+              class="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Alwar's leading healthcare institution providing clinical hospital exposure, advanced simulation labs, and
+              recognized degrees in Nursing, Pharmacy & Ayurved.
             </p>
 
-            <!-- Key Feature Micro Badges -->
-            <div class="pt-1 flex flex-wrap justify-center lg:justify-start gap-2.5 text-xs font-semibold text-slate-200">
-              <div class="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/80 px-3 py-1.5 rounded-xl shadow-sm">
-                <i data-lucide="award" class="w-4 h-4 text-amber-400"></i> Govt. Recognized Degrees
+            <!-- Creative Micro Feature Grid -->
+            <div class="pt-1 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-medium text-slate-200">
+              <div class="flex items-center gap-2.5 bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl shadow-sm">
+                <div
+                  class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="award" class="w-4 h-4"></i>
+                </div>
+                <span>Govt. Recognized Degrees</span>
               </div>
-              <div class="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/80 px-3 py-1.5 rounded-xl shadow-sm">
-                <i data-lucide="hospital" class="w-4 h-4 text-emerald-400"></i> Hospital Bed Exposure
+
+              <div class="flex items-center gap-2.5 bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl shadow-sm">
+                <div
+                  class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="hospital" class="w-4 h-4"></i>
+                </div>
+                <span>Bedside Hospital Ward</span>
               </div>
-              <div class="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/80 px-3 py-1.5 rounded-xl shadow-sm">
-                <i data-lucide="users" class="w-4 h-4 text-sky-400"></i> 100% Placement Support
+
+              <div class="flex items-center gap-2.5 bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl shadow-sm">
+                <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="users" class="w-4 h-4"></i>
+                </div>
+                <span>100% Placement Support</span>
               </div>
             </div>
 
-            <!-- CTA Buttons -->
-            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+            <!-- Action Buttons -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <a href="courses.html" title="Explore Course Programs"
-                class="w-full sm:w-auto px-7 py-3.5 bg-gradient-to-r from-sky-500 to-sky-400 lg:hover:from-sky-400 lg:hover:to-sky-300 text-slate-950 font-bold text-sm sm:text-base rounded-xl shadow-lg shadow-sky-500/20 transition-all flex items-center justify-center gap-2">
+                class="w-full sm:w-auto px-7 py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 flex items-center justify-center gap-2">
                 <span>Explore Courses</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
 
               <button
-                class="open-admission-modal w-full sm:w-auto px-7 py-3.5 bg-slate-900/90 backdrop-blur-md lg:hover:bg-slate-800 text-white border border-slate-700 font-semibold text-sm sm:text-base rounded-xl transition-all flex items-center justify-center gap-2 shadow-md">
+                class="open-admission-modal w-full sm:w-auto px-7 py-3.5 bg-slate-900/90 lg:hover:bg-slate-800 lg:hover:border-sky-500/50 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-slate-900/50 active:scale-95 text-white border border-slate-700 font-semibold text-sm sm:text-base rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-md cursor-pointer">
                 <i data-lucide="user-plus" class="w-4 h-4 text-sky-400"></i>
                 <span>Apply Now 2026</span>
               </button>
             </div>
 
-            <!-- Compact Trust Metrics -->
+            <!-- Clean Trust Metrics -->
             <div class="pt-4 border-t border-slate-800/80 grid grid-cols-3 gap-3 text-center lg:text-left">
               <div>
                 <div class="text-xl sm:text-2xl font-extrabold text-white">4 Main</div>
@@ -344,31 +350,33 @@
               </div>
               <div>
                 <div class="text-xl sm:text-2xl font-extrabold text-sky-400">100%</div>
-                <div class="text-xs text-slate-400 font-medium">Clinical Training</div>
+                <div class="text-xs text-slate-400 font-medium">Clinical Ward Training</div>
               </div>
               <div>
                 <div class="text-xl sm:text-2xl font-extrabold text-teal-400">RUHS & INC</div>
-                <div class="text-xs text-slate-400 font-medium">Approved Affiliations</div>
+                <div class="text-xs text-slate-400 font-medium">Recognized Institution</div>
               </div>
             </div>
 
           </div>
 
-          <!-- Right Column: Creative Floating Glass Card Visual Showcase -->
-          <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+          <!-- Right Column: Creative Asymmetric Card Showcase -->
+          <div class="lg:col-span-5 relative mt-6 lg:mt-0">
             <div class="relative mx-auto max-w-md lg:max-w-none">
 
-              <!-- Subtle Glass Backdrop Frame -->
-              <div class="relative rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl bg-slate-900/60 backdrop-blur-xl p-2.5">
+              <!-- Main Card Container -->
+              <div class="relative rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-900 p-2">
                 <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-800">
-                  <img src="public/images/hero.webp" alt="Nursing and pharmacy students at Hopewell Colleges Alwar campus"
+                  <img src="public/images/hero.webp"
+                    alt="Nursing and pharmacy students at Hopewell Colleges Alwar campus"
                     title="Healthcare Education at Hopewell Colleges" loading="eager" fetchpriority="high"
                     class="w-full h-full object-cover transform lg:hover:scale-105 transition-transform duration-700">
-                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
                 </div>
 
-                <!-- Card Sub-Bar -->
-                <div class="p-3 bg-slate-900/95 flex items-center justify-between gap-3 text-xs border-t border-slate-800 rounded-b-2xl">
+                <!-- Bottom Status Bar -->
+                <div
+                  class="p-3 bg-slate-900 flex items-center justify-between gap-3 text-xs border-t border-slate-800 rounded-b-2xl">
                   <div class="flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span class="font-bold text-slate-200">Admissions Open 2026-27</span>
@@ -377,20 +385,24 @@
                 </div>
               </div>
 
-              <!-- Creative Floating Badge 1: Clinical Simulation -->
-              <div class="absolute -bottom-5 -left-4 bg-slate-900/95 backdrop-blur-xl p-3.5 rounded-2xl shadow-2xl border border-slate-700/80 max-w-[240px] hidden sm:flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">
+              <!-- Floating Info Card 1: Clinical Simulation -->
+              <div
+                class="absolute -bottom-6 -left-4 bg-slate-900/95 p-3.5 rounded-2xl shadow-2xl border border-slate-700/90 max-w-[240px] hidden sm:flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">
                   <i data-lucide="activity" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <div class="text-xs font-bold text-white">Clinical Simulation Lab</div>
-                  <div class="text-[11px] text-slate-400 leading-tight">Live hospital ward & anatomy labs</div>
+                  <div class="text-[11px] text-slate-400 leading-tight">Live hospital ward & anatomy models</div>
                 </div>
               </div>
 
-              <!-- Creative Floating Badge 2: Recognitions -->
-              <div class="absolute -top-4 -right-3 bg-slate-900/95 backdrop-blur-xl text-white px-3.5 py-2.5 rounded-2xl shadow-2xl border border-slate-700/80 flex items-center gap-2.5">
-                <div class="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-extrabold text-xs border border-sky-400/30">
+              <!-- Floating Info Card 2: Recognitions -->
+              <div
+                class="absolute -top-4 -right-3 bg-slate-900/95 text-white px-3.5 py-2.5 rounded-2xl shadow-2xl border border-slate-700/90 flex items-center gap-2.5">
+                <div
+                  class="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-extrabold text-xs border border-sky-400/30">
                   INC
                 </div>
                 <div>
@@ -411,214 +423,257 @@
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
             Choose the Right Path for Your Healthcare Career
           </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
           <p class="text-slate-600 text-base leading-relaxed">
             Hopewell Colleges provides standardized, council-approved healthcare and pharmaceutical courses with
             extensive clinical rotation, modern laboratory practice, and dedicated career guidance.
           </p>
         </div>
 
-        <!-- 4 Course Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Course Showcase Swiper Carousel -->
+        <div class="relative group/course-swiper">
 
-          <!-- Card 1: B.Sc Nursing -->
-          <div
-            class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between group">
-            <div class="relative h-48 overflow-hidden">
-              <img src="public/images/nursing/bsc-nursing.webp" alt="B.Sc Nursing practical laboratory training"
-                title="B.Sc Nursing Course at Hopewell Colleges" loading="lazy"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
-              <span
-                class="absolute top-4 left-4 bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-                Degree Course
-              </span>
-              <span
-                class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
-                4 Years
-              </span>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-              <div>
-                <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Nursing Sciences</div>
-                <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-sky-600 transition-colors">B.Sc. Nursing
-                </h3>
-                <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
-                  4-year undergraduate degree preparing students for professional clinical practice, patient care
-                  management, and global nursing career opportunities.
-                </p>
-              </div>
-              <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Affiliation:</span>
-                  <span class="font-semibold text-slate-900">RUHS, RNC, INC</span>
+          <div class="swiper course-swiper !py-10 -my-10">
+            <div class="swiper-wrapper">
+              <!-- Slide 1: B.Sc Nursing -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  <div class="relative h-48 overflow-hidden">
+                    <img src="public/images/nursing/bsc-nursing.webp" alt="B.Sc Nursing practical laboratory training"
+                      title="B.Sc Nursing Course at Hopewell Colleges" loading="lazy"
+                      class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                    <span
+                      class="absolute top-4 left-4 bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                      Degree Course
+                    </span>
+                    <span
+                      class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                      4 Years
+                    </span>
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Nursing Sciences</div>
+                      <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-sky-600 transition-colors">B.Sc.
+                        Nursing
+                      </h3>
+                      <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
+                        4-year undergraduate degree preparing students for professional clinical practice, patient care
+                        management, and global nursing career opportunities.
+                      </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Affiliation:</span>
+                        <span class="font-semibold text-slate-900">RUHS, RNC, INC</span>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Eligibility:</span>
+                        <span class="font-semibold text-slate-900">10+2 Science (PCB)</span>
+                      </div>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between gap-2">
+                      <a href="bsc-nursing.html" title="View B.Sc Nursing Details"
+                        class="text-sky-600 font-bold text-sm hover:text-sky-700 flex items-center gap-1">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                      </a>
+                      <button
+                        class="open-admission-modal px-3.5 py-1.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-md lg:hover:shadow-sky-600/30 active:scale-95 text-white text-xs font-semibold rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+                        Apply Now
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Eligibility:</span>
-                  <span class="font-semibold text-slate-900">10+2 Science (PCB)</span>
+              </div>
+
+              <!-- Slide 2: GNM Nursing -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  <div class="relative h-48 overflow-hidden">
+                    <img src="public/images/nursing/gnm-nursing.webp"
+                      alt="GNM nursing midwifery students in clinical practice" title="GNM Course at Hopewell Colleges"
+                      loading="lazy"
+                      class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                    <span
+                      class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                      Diploma Course
+                    </span>
+                    <span
+                      class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                      3 Years
+                    </span>
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <div class="text-xs font-bold text-teal-600 uppercase tracking-wider mb-1">General Nursing</div>
+                      <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-teal-600 transition-colors">GNM
+                        Nursing
+                      </h3>
+                      <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
+                        General Nursing & Midwifery 3-year diploma focused on general healthcare, clinical bed care,
+                        community
+                        healthcare, and maternal care.
+                      </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Recognition:</span>
+                        <span class="font-semibold text-slate-900">RNC, INC</span>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Eligibility:</span>
+                        <span class="font-semibold text-slate-900">10+2 Any Stream (40%)</span>
+                      </div>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between gap-2">
+                      <a href="gnm.html" title="View GNM Course Details"
+                        class="text-teal-600 font-bold text-sm hover:text-teal-700 flex items-center gap-1">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                      </a>
+                      <button
+                        class="open-admission-modal px-3.5 py-1.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-md lg:hover:shadow-sky-600/30 active:scale-95 text-white text-xs font-semibold rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+                        Apply Now
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="pt-2 flex items-center justify-between gap-2">
-                <a href="bsc-nursing.html" title="View B.Sc Nursing Details"
-                  class="text-sky-600 font-bold text-sm hover:text-sky-700 flex items-center gap-1">
-                  Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <button
-                  class="open-admission-modal px-3.5 py-1.5 bg-sky-600 text-white text-xs font-semibold rounded-lg lg:hover:bg-sky-700 transition-colors">
-                  Apply Now
-                </button>
+
+              <!-- Slide 3: D.Pharmacy -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  <div class="relative h-48 overflow-hidden">
+                    <img src="public/images/pharmacy/d-pharmacy.webp"
+                      alt="D.Pharmacy student conducting experiment in lab"
+                      title="D.Pharmacy Course at Hopewell Colleges" loading="lazy"
+                      class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                    <span
+                      class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                      Pharmacy Diploma
+                    </span>
+                    <span
+                      class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                      2 Years
+                    </span>
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Pharmaceuticals</div>
+                      <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-indigo-600 transition-colors">
+                        D.Pharmacy
+                      </h3>
+                      <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
+                        2-year diploma course in pharmacy providing solid foundations in pharmaceutical chemistry,
+                        pharmacology, dispensing, and hospital pharmacy.
+                      </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Approval:</span>
+                        <span class="font-semibold text-slate-900">RUHS, PCI New Delhi</span>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Eligibility:</span>
+                        <span class="font-semibold text-slate-900">10+2 (PCB / PCM)</span>
+                      </div>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between gap-2">
+                      <a href="d-pharmacy.html" title="View D.Pharmacy Details"
+                        class="text-indigo-600 font-bold text-sm hover:text-indigo-700 flex items-center gap-1">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                      </a>
+                      <button
+                        class="open-admission-modal px-3.5 py-1.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-md lg:hover:shadow-sky-600/30 active:scale-95 text-white text-xs font-semibold rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+                        Apply Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <!-- Slide 4: DAN&P Ayurved -->
+              <div class="swiper-slide h-auto">
+                <div
+                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  <div class="relative h-48 overflow-hidden">
+                    <img src="public/images/ayurved/danp-ayurved.webp"
+                      alt="Ayurvedic nursing and herbal pharmacology lab"
+                      title="DAN&P Ayurved Course at Hopewell Colleges" loading="lazy"
+                      class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
+                    <span
+                      class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                      Ayurved Diploma
+                    </span>
+                    <span
+                      class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                      2.6 Years
+                    </span>
+                  </div>
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <div class="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">Traditional Medicine
+                      </div>
+                      <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-emerald-600 transition-colors">
+                        DAN&P
+                        (Ayurved)</h3>
+                      <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
+                        Diploma in Ayurved Nursing and Pharmacy combining classical Ayurvedic medicine, herbal
+                        formulations,
+                        Panchakarma care, and clinical nursing.
+                      </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Affiliation:</span>
+                        <span class="font-semibold text-slate-900">DSRRAU, Raj. Ayurved</span>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span class="font-medium text-slate-700">Eligibility:</span>
+                        <span class="font-semibold text-slate-900">10+2 Passed</span>
+                      </div>
+                    </div>
+                    <div class="pt-2 flex items-center justify-between gap-2">
+                      <a href="danp.html" title="View DAN&P Ayurved Details"
+                        class="text-emerald-600 font-bold text-sm hover:text-emerald-700 flex items-center gap-1">
+                        Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                      </a>
+                      <button
+                        class="open-admission-modal px-3.5 py-1.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-md lg:hover:shadow-sky-600/30 active:scale-95 text-white text-xs font-semibold rounded-lg shadow-sm transition-all duration-300 cursor-pointer">
+                        Apply Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Card 2: GNM Nursing -->
-          <div
-            class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between group">
-            <div class="relative h-48 overflow-hidden">
-              <img src="public/images/nursing/gnm-nursing.webp"
-                alt="GNM nursing midwifery students in clinical practice" title="GNM Course at Hopewell Colleges"
-                loading="lazy"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
-              <span
-                class="absolute top-4 left-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-                Diploma Course
-              </span>
-              <span
-                class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
-                3 Years
-              </span>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-              <div>
-                <div class="text-xs font-bold text-teal-600 uppercase tracking-wider mb-1">General Nursing</div>
-                <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-teal-600 transition-colors">GNM Nursing
-                </h3>
-                <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
-                  General Nursing & Midwifery 3-year diploma focused on general healthcare, clinical bed care, community
-                  healthcare, and maternal care.
-                </p>
-              </div>
-              <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Recognition:</span>
-                  <span class="font-semibold text-slate-900">RNC, INC</span>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Eligibility:</span>
-                  <span class="font-semibold text-slate-900">10+2 Any Stream (40%)</span>
-                </div>
-              </div>
-              <div class="pt-2 flex items-center justify-between gap-2">
-                <a href="gnm.html" title="View GNM Course Details"
-                  class="text-teal-600 font-bold text-sm hover:text-teal-700 flex items-center gap-1">
-                  Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <button
-                  class="open-admission-modal px-3.5 py-1.5 bg-teal-600 text-white text-xs font-semibold rounded-lg hover:bg-teal-700 transition-colors">
-                  Apply Now
-                </button>
-              </div>
-            </div>
-          </div>
+          <!-- Swiper Navigation Arrows: Inline SVG Chevron Icons, Half-Overlay Edge Position (-left-6 / -right-6), Hover Fade-In -->
+          <button aria-label="Previous Slide"
+            class="course-prev hidden md:flex absolute top-1/2 -translate-y-1/2 -left-6 z-30 w-12 h-12 bg-white text-slate-800 rounded-full shadow-xl border border-slate-200 items-center justify-center lg:hover:bg-sky-600 lg:hover:text-white lg:hover:border-sky-600 transition-all duration-300 opacity-0 group-hover/course-swiper:opacity-100 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
 
-          <!-- Card 3: D.Pharmacy -->
-          <div
-            class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between group">
-            <div class="relative h-48 overflow-hidden">
-              <img src="public/images/pharmacy/d-pharmacy.webp" alt="D.Pharmacy student conducting experiment in lab"
-                title="D.Pharmacy Course at Hopewell Colleges" loading="lazy"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
-              <span
-                class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-                Pharmacy Diploma
-              </span>
-              <span
-                class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
-                2 Years
-              </span>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-              <div>
-                <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Pharmaceuticals</div>
-                <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-indigo-600 transition-colors">D.Pharmacy
-                </h3>
-                <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
-                  2-year diploma course in pharmacy providing solid foundations in pharmaceutical chemistry,
-                  pharmacology, dispensing, and hospital pharmacy.
-                </p>
-              </div>
-              <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Approval:</span>
-                  <span class="font-semibold text-slate-900">RUHS, PCI New Delhi</span>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Eligibility:</span>
-                  <span class="font-semibold text-slate-900">10+2 (PCB / PCM)</span>
-                </div>
-              </div>
-              <div class="pt-2 flex items-center justify-between gap-2">
-                <a href="d-pharmacy.html" title="View D.Pharmacy Details"
-                  class="text-indigo-600 font-bold text-sm hover:text-indigo-700 flex items-center gap-1">
-                  Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <button
-                  class="open-admission-modal px-3.5 py-1.5 bg-indigo-600 text-white text-xs font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
-                  Apply Now
-                </button>
-              </div>
-            </div>
-          </div>
+          <button aria-label="Next Slide"
+            class="course-next hidden md:flex absolute top-1/2 -translate-y-1/2 -right-6 z-30 w-12 h-12 bg-white text-slate-800 rounded-full shadow-xl border border-slate-200 items-center justify-center lg:hover:bg-sky-600 lg:hover:text-white lg:hover:border-sky-600 transition-all duration-300 opacity-0 group-hover/course-swiper:opacity-100 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
 
-          <!-- Card 4: DAN&P Ayurved -->
-          <div
-            class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between group">
-            <div class="relative h-48 overflow-hidden">
-              <img src="public/images/ayurved/danp-ayurved.webp" alt="Ayurvedic nursing and herbal pharmacology lab"
-                title="DAN&P Ayurved Course at Hopewell Colleges" loading="lazy"
-                class="w-full h-full object-cover lg:group-hover:scale-105 transition-transform duration-500">
-              <span
-                class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-                Ayurved Diploma
-              </span>
-              <span
-                class="absolute top-4 right-4 bg-slate-900/80 text-white text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm">
-                2.6 Years
-              </span>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-              <div>
-                <div class="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">Traditional Medicine</div>
-                <h3 class="text-xl font-bold text-slate-900 lg:group-hover:text-emerald-600 transition-colors">DAN&P
-                  (Ayurved)</h3>
-                <p class="text-slate-600 text-sm mt-2 line-clamp-3 leading-relaxed">
-                  Diploma in Ayurved Nursing and Pharmacy combining classical Ayurvedic medicine, herbal formulations,
-                  Panchakarma care, and clinical nursing.
-                </p>
-              </div>
-              <div class="pt-3 border-t border-slate-200/60 space-y-2 text-xs text-slate-500">
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Affiliation:</span>
-                  <span class="font-semibold text-slate-900">DSRRAU, Raj. Ayurved</span>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span class="font-medium text-slate-700">Eligibility:</span>
-                  <span class="font-semibold text-slate-900">10+2 Passed</span>
-                </div>
-              </div>
-              <div class="pt-2 flex items-center justify-between gap-2">
-                <a href="danp.html" title="View DAN&P Ayurved Details"
-                  class="text-emerald-600 font-bold text-sm hover:text-emerald-700 flex items-center gap-1">
-                  Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <button
-                  class="open-admission-modal px-3.5 py-1.5 bg-emerald-600 text-white text-xs font-semibold rounded-lg hover:bg-emerald-700 transition-colors">
-                  Apply Now
-                </button>
-              </div>
-            </div>
-          </div>
+          <!-- Swiper Pagination Dots: Mobile View Only (`block md:hidden`), Hidden on Desktop/Web -->
+          <div class="swiper-pagination course-pagination mt-6 block md:hidden !static"></div>
 
         </div>
 
@@ -638,16 +693,17 @@
             <!-- Experience badge overlay -->
             <div
               class="absolute -bottom-6 -right-6 bg-sky-600 text-white p-6 rounded-3xl shadow-xl hidden sm:block max-w-xs">
-              <div class="text-3xl font-black">2026 Ready</div>
+              <div class="text-3xl font-bold">2026 Ready</div>
               <div class="text-xs text-sky-100 mt-1 font-medium">Modern clinical simulation labs & multi-specialty
                 clinical attachments in Alwar.</div>
             </div>
           </div>
 
           <div class="lg:col-span-6 space-y-6">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
               Dedicated to Academic Rigor & Compassionate Healthcare Education
             </h2>
+            <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full  my-2.5"></div>
 
             <p class="text-slate-600 text-base leading-relaxed">
               Hopewell Colleges (Hopewell Educational Group) was established with a singular vision: to deliver
@@ -705,7 +761,11 @@
         <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
           <span class="text-sky-400 font-semibold text-xs tracking-wider uppercase">Official Approvals &
             Accreditations</span>
-          <h2 class="text-2xl sm:text-3xl font-bold">Recognized by Leading Health Councils</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-snug">
+            Recognized by Leading Health
+            Councils
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-400 to-teal-300 rounded-full mx-auto my-2.5"></div>
           <p class="text-slate-400 text-sm">All degrees and diplomas granted at Hopewell Colleges strictly comply with
             state and national healthcare education standards.</p>
         </div>
@@ -715,7 +775,7 @@
           <div
             class="bg-slate-800/80 border border-slate-700 p-5 rounded-2xl text-center space-y-2 lg:hover:border-sky-500/50 transition-colors">
             <div
-              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-black text-sm">
+              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-bold text-sm">
               RUHS
             </div>
             <div class="font-bold text-white text-sm">RUHS Jaipur</div>
@@ -725,7 +785,7 @@
           <div
             class="bg-slate-800/80 border border-slate-700 p-5 rounded-2xl text-center space-y-2 lg:hover:border-sky-500/50 transition-colors">
             <div
-              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-black text-sm">
+              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-bold text-sm">
               INC
             </div>
             <div class="font-bold text-white text-sm">INC New Delhi</div>
@@ -735,7 +795,7 @@
           <div
             class="bg-slate-800/80 border border-slate-700 p-5 rounded-2xl text-center space-y-2 lg:hover:border-sky-500/50 transition-colors">
             <div
-              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-black text-sm">
+              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-bold text-sm">
               RNC
             </div>
             <div class="font-bold text-white text-sm">RNC Jaipur</div>
@@ -745,7 +805,7 @@
           <div
             class="bg-slate-800/80 border border-slate-700 p-5 rounded-2xl text-center space-y-2 lg:hover:border-sky-500/50 transition-colors">
             <div
-              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-black text-sm">
+              class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center mx-auto font-bold text-sm">
               PCI
             </div>
             <div class="font-bold text-white text-sm">PCI New Delhi</div>
@@ -755,7 +815,7 @@
           <div
             class="bg-slate-800/80 border border-slate-700 p-5 rounded-2xl text-center space-y-2 lg:hover:border-sky-500/50 transition-colors col-span-2 md:col-span-1">
             <div
-              class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mx-auto font-black text-xs">
+              class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mx-auto font-bold text-xs">
               DSRRAU
             </div>
             <div class="font-bold text-white text-sm">DSRRAU Jodhpur</div>
@@ -772,9 +832,10 @@
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
             Why Hopewell Colleges Stands Out
           </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
           <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
             We focus on holistic education, combining rigorous academic knowledge with hands-on hospital experience,
             compassionate care values, and student support.
@@ -885,11 +946,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
           <div class="lg:col-span-6 space-y-6">
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
               Learn in the Classroom.<br>
               Practice in the Lab.<br>
               <span class="text-sky-400">Grow Through Clinical Exposure.</span>
             </h2>
+            <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full  my-2.5"></div>
             <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
               Nursing and pharmacy are practical professions. At Hopewell Colleges, we place students directly into real
               clinical environments to build bedside confidence, clinical decision-making skills, and empathetic patient
@@ -913,7 +975,7 @@
 
             <div class="pt-4">
               <a href="campus.html" title="Explore Hospital Clinical Attachments"
-                class="inline-flex items-center gap-2 px-6 py-3 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-xl text-sm transition-colors">
+                class="inline-flex items-center gap-2 px-6 py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold rounded-xl text-sm transition-all duration-300 shadow-md">
                 <span>View Clinical Training Facilities</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
@@ -937,7 +999,11 @@
       <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Your Healthcare Career Starts Here</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            Your Healthcare Career
+            Starts Here
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
           <p class="text-slate-600 text-sm sm:text-base">Simple 4-step admission process to secure your seat in B.Sc
             Nursing, GNM, D.Pharmacy or DAN&P.</p>
         </div>
@@ -946,7 +1012,7 @@
 
           <div class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 text-center relative">
             <div
-              class="w-12 h-12 rounded-2xl bg-sky-600 text-white font-black text-xl flex items-center justify-center mx-auto shadow-md">
+              class="w-12 h-12 rounded-2xl bg-sky-600 text-white font-bold text-xl flex items-center justify-center mx-auto shadow-md">
               1
             </div>
             <h3 class="font-bold text-slate-900 text-lg">Explore Courses</h3>
@@ -956,7 +1022,7 @@
 
           <div class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 text-center relative">
             <div
-              class="w-12 h-12 rounded-2xl bg-sky-600 text-white font-black text-xl flex items-center justify-center mx-auto shadow-md">
+              class="w-12 h-12 rounded-2xl bg-sky-600 text-white font-bold text-xl flex items-center justify-center mx-auto shadow-md">
               2
             </div>
             <h3 class="font-bold text-slate-900 text-lg">Check Eligibility</h3>
@@ -966,7 +1032,7 @@
 
           <div class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 text-center relative">
             <div
-              class="w-12 h-12 rounded-2xl bg-sky-600 text-white font-black text-xl flex items-center justify-center mx-auto shadow-md">
+              class="w-12 h-12 rounded-2xl bg-sky-600 text-white font-bold text-xl flex items-center justify-center mx-auto shadow-md">
               3
             </div>
             <h3 class="font-bold text-slate-900 text-lg">Submit Application</h3>
@@ -976,7 +1042,7 @@
 
           <div class="bg-white p-6 rounded-3xl border border-slate-200/80 space-y-4 text-center relative">
             <div
-              class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-black text-xl flex items-center justify-center mx-auto shadow-md">
+              class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-bold text-xl flex items-center justify-center mx-auto shadow-md">
               4
             </div>
             <h3 class="font-bold text-slate-900 text-lg">Seat Allotment</h3>
@@ -988,7 +1054,7 @@
 
         <div class="mt-12 text-center">
           <button
-            class="open-admission-modal inline-flex items-center gap-2 px-8 py-4 bg-gradient-medical text-white font-bold text-base rounded-2xl shadow-xl shadow-sky-600/20 lg:hover:scale-105 transition-all">
+            class="open-admission-modal inline-flex items-center gap-2 px-7 py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
             <i data-lucide="edit-3" class="w-5 h-5"></i>
             <span>Start Your Online Application</span>
           </button>
@@ -1003,7 +1069,11 @@
 
         <div class="text-center mb-12 space-y-2">
           <span class="text-sky-600 font-semibold text-xs tracking-wider uppercase">Got Questions?</span>
-          <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-snug">
+            Frequently Asked
+            Questions
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-400 rounded-full mx-auto my-2.5"></div>
         </div>
 
         <div class="space-y-4">
@@ -1131,7 +1201,7 @@
         </div>
 
         <button type="submit"
-          class="w-full py-4 bg-gradient-medical text-white font-bold text-base rounded-xl shadow-lg lg:hover:shadow-xl transition-all">
+          class="w-full py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
           Submit Application Request
         </button>
       </form>
@@ -1251,7 +1321,7 @@
             </p>
             <div class="pt-3">
               <button
-                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 text-white font-extrabold text-sm sm:text-base rounded-xl transition-all shadow-md">
+                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
                 Enquire Online
               </button>
             </div>
@@ -1279,6 +1349,8 @@
     </div>
   </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="public/assets/js/main.js"></script>
 </body>
 

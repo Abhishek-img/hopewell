@@ -35,13 +35,15 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Custom Gradients */
-.bg-gradient-medical {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #1e3a8a 100%);
+/* Solid Button Color Utilities & Creative Hover Animations */
+.bg-gradient-medical,
+.bg-gradient-ayurved {
+  background-color: #0284c7 !important;
 }
 
-.bg-gradient-ayurved {
-  background: linear-gradient(135deg, #0d9488 0%, #047857 100%);
+/* Creative Premium Button Hover Animation */
+button, .open-admission-modal {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bg-gradient-subtle {
@@ -78,3 +80,32 @@ html {
     box-shadow: 0 20px 25px -5px rgba(14, 165, 233, 0.12), 0 8px 10px -6px rgba(14, 165, 233, 0.08);
   }
 }
+
+/* Swiper Custom Navigation Overrides */
+.course-prev::after,
+.course-next::after,
+.pillars-prev::after,
+.pillars-next::after,
+.gallery-prev::after,
+.gallery-next::after {
+  display: none !important;
+}
+
+.course-pagination .swiper-pagination-bullet,
+.pillars-pagination .swiper-pagination-bullet,
+.gallery-pagination .swiper-pagination-bullet {
+  background: #0284c7 !important;
+  opacity: 0.4;
+  width: 8px;
+  height: 8px;
+  transition: all 0.3s ease;
+}
+
+.course-pagination .swiper-pagination-bullet-active,
+.pillars-pagination .swiper-pagination-bullet-active,
+.gallery-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 24px;
+  border-radius: 4px;
+}
+
