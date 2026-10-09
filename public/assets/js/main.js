@@ -137,6 +137,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Hero Swiper Initialization
+  if (document.querySelector('.hero-swiper') && window.Swiper) {
+    new window.Swiper('.hero-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 700,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.hero-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.hero-next',
+        prevEl: '.hero-prev',
+      },
+    });
+  }
+
   // Course Swiper Initialization
   if (document.querySelector('.course-swiper') && window.Swiper) {
     new window.Swiper('.course-swiper', {
