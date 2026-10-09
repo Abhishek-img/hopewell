@@ -97,17 +97,74 @@ html {
   display: none !important;
 }
 
+/* Hero Swiper Custom Navigation Arrows (Desktop/Web View Only) */
+.hero-prev,
+.hero-next {
+  width: 46px !important;
+  height: 46px !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1.5px solid #bae6fd !important;
+  border-radius: 9999px !important;
+  color: #0284c7 !important;
+  box-shadow: 0 10px 20px -3px rgba(2, 132, 199, 0.2) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  z-index: 35 !important;
+  display: none !important; /* Hidden on mobile screens */
+}
+
+@media (min-width: 1024px) {
+  .hero-prev,
+  .hero-next {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+.hero-prev:hover,
+.hero-next:hover {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 15px 25px -5px rgba(2, 132, 199, 0.35) !important;
+}
+
+.hero-prev {
+  left: 12px !important;
+}
+
+.hero-next {
+  right: 12px !important;
+}
+
+/* Pagination: Show ONLY on Mobile View (<1024px), Hide on Desktop */
+.hero-pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  bottom: -4px !important;
+}
+
+@media (min-width: 1024px) {
+  .hero-pagination {
+    display: none !important; /* Hide dots on desktop */
+  }
+}
+
 .hero-pagination .swiper-pagination-bullet {
   background: #0284c7 !important;
   opacity: 0.35;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   transition: all 0.3s ease;
 }
 
 .hero-pagination .swiper-pagination-bullet-active {
   opacity: 1 !important;
-  width: 28px !important;
+  width: 26px !important;
   border-radius: 9999px !important;
   background: #0284c7 !important;
 }
@@ -119,7 +176,7 @@ html {
   opacity: 0.4;
   width: 8px;
   height: 8px;
-}  transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .course-pagination .swiper-pagination-bullet-active,
