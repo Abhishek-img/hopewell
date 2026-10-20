@@ -137,9 +137,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Hero Swiper Initialization
+  // Hero Swiper Initialization (Amrita.edu Style with "Up Next" Floating Preview Card)
   if (document.querySelector('.hero-swiper') && window.Swiper) {
-    new window.Swiper('.hero-swiper', {
+    const heroSlidesData = [
+      {
+        title: "B.Sc. Nursing",
+        desc: "4 Year Degree • Clinical Hospital Rotations",
+        thumb: "public/images/hopewellStudents.webp"
+      },
+      {
+        title: "GNM Nursing",
+        desc: "3 Year Diploma • Bedside Emergency & Maternity",
+        thumb: "public/images/hopewellBloodDonationGirls.webp"
+      },
+      {
+        title: "D.Pharmacy",
+        desc: "2 Year Diploma • PCI Approved Drug Labs",
+        thumb: "public/images/hopewellLab2.webp"
+      },
+      {
+        title: "DAN&P Ayurved",
+        desc: "2.6 Year Diploma • Panchakarma & Herbal Units",
+        thumb: "public/images/hopewellPharmcyBloodDonaition.webp"
+      }
+    ];
+
+    const nextThumb = document.getElementById('hero-next-thumb');
+    const nextTitle = document.getElementById('hero-next-title');
+    const nextDesc = document.getElementById('hero-next-desc');
+    const progressBar = document.getElementById('hero-card-progress');
+
+    function updateNextCard(realIndex) {
+      const nextIndex = (realIndex + 1) % heroSlidesData.length;
+      const nextData = heroSlidesData[nextIndex];
+      if (nextThumb && nextData) {
+        nextThumb.src = nextData.thumb;
+        nextThumb.alt = nextData.title;
+      }
+      if (nextTitle && nextData) nextTitle.textContent = nextData.title;
+      if (nextDesc && nextData) nextDesc.textContent = nextData.desc;
+    }
+
+    const heroSwiper = new window.Swiper('.hero-swiper', {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
@@ -147,20 +186,55 @@ document.addEventListener('DOMContentLoaded', () => {
       fadeEffect: {
         crossFade: true
       },
-      speed: 700,
+      speed: 800,
       autoplay: {
-        delay: 5000,
+        delay: 5500,
         disableOnInteraction: false,
       },
       pagination: {
         el: '.hero-pagination',
         clickable: true,
       },
-      navigation: {
-        nextEl: '.hero-next',
-        prevEl: '.hero-prev',
-      },
+      on: {
+        init: function () {
+          updateNextCard(this.realIndex || 0);
+          if (window.lucide) window.lucide.createIcons();
+        },
+        slideChange: function () {
+          updateNextCard(this.realIndex || 0);
+        },
+        autoplayTimeLeft: function (s, time, progress) {
+          if (progressBar) {
+            progressBar.style.width = Math.min(100, Math.max(0, (1 - progress) * 100)) + '%';
+          }
+        }
+      }
     });
+
+    const heroNextCard = document.getElementById('hero-next-card');
+    const heroCustomNext = document.getElementById('hero-custom-next');
+    const heroCustomPrev = document.getElementById('hero-custom-prev');
+
+    if (heroCustomNext) {
+      heroCustomNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        heroSwiper.slideNext();
+      });
+    }
+
+    if (heroCustomPrev) {
+      heroCustomPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        heroSwiper.slidePrev();
+      });
+    }
+
+    if (heroNextCard) {
+      heroNextCard.addEventListener('click', (e) => {
+        if (e.target.closest('#hero-custom-prev')) return;
+        heroSwiper.slideNext();
+      });
+    }
   }
 
   // Course Swiper Initialization
