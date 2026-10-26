@@ -4,6 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
     window.lucide.createIcons();
   }
 
+  // Sticky Transparent-to-White Header on Scroll (for pages with Hero Banner)
+  const siteHeader = document.getElementById('site-header');
+  const mainBanner = document.getElementById('main-banner');
+
+  if (siteHeader && mainBanner) {
+    function handleHeaderScroll() {
+      if (window.scrollY > 30) {
+        siteHeader.classList.add('header-scrolled');
+        siteHeader.classList.remove('header-transparent');
+      } else {
+        siteHeader.classList.remove('header-scrolled');
+        siteHeader.classList.add('header-transparent');
+      }
+    }
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+    handleHeaderScroll();
+  }
+
   // Mobile Menu Toggle
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu-drawer');

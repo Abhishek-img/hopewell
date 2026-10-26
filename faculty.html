@@ -19,6 +19,59 @@
 
   <!-- Tailwind CSS & Custom Styles -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sky: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            blue: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+              950: '#042f2e',
+            },
+            slate: {
+              50: '#f8faf9',
+              100: '#edf3f1',
+              200: '#e2ece8',
+              300: '#cbdcd6',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#122b25',
+              900: '#091f1a',
+              950: '#041512',
+            }
+          },
+          maxWidth: {
+            '8xl': '92rem',
+            '9xl': '98rem',
+          }
+        }
+      }
+    };
+  </script>
   <link rel="stylesheet" href="public/assets/css/styles.css">
 
   <!-- Lucide Icons -->
@@ -29,7 +82,7 @@
   <!-- Top Announcement Bar -->
   <div
     class="bg-gradient-to-r from-slate-950 via-slate-900 to-sky-950 text-slate-300 text-xs py-2.5 px-4 sm:px-8 border-b border-slate-800/80">
-    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+    <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
       <div class="flex flex-wrap items-center gap-3">
         <span
           class="inline-flex items-center gap-1.5 text-sky-300 font-bold bg-sky-900/60 px-3 py-1 rounded-full border border-sky-700/50 shadow-sm">
@@ -56,7 +109,7 @@
   <!-- Sticky Creative Glassmorphism Header -->
   <header
     class="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-lg shadow-sky-900/5 transition-all">
-    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-2 sm:py-3 min-h-[6.5rem] sm:min-h-[7.5rem] lg:min-h-[8.5rem]">
 
         <!-- Clean Direct Logo (NO Background Box) -->
@@ -144,7 +197,7 @@
         <!-- Apply Now CTA Button with Gradient Glow -->
         <div class="hidden sm:flex items-center gap-3">
           <button
-            class="open-admission-modal px-5 py-2.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
+            class="open-admission-modal px-5 py-2.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-emerald-600/30 active:scale-95 text-white font-semibold text-sm rounded-xl shadow-md transition-all duration-300 flex items-center gap-2 cursor-pointer">
             <i data-lucide="file-text" class="w-4 h-4"></i> Apply Now 2026
           </button>
         </div>
@@ -204,7 +257,7 @@
     </div>
     <div class="p-5 border-t border-slate-100 bg-slate-50">
       <button
-        class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-center rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+        class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-emerald-600/30 active:scale-95 text-white font-semibold text-center rounded-xl shadow-md transition-all duration-300 cursor-pointer">
         Apply for Admission 2026
       </button>
     </div>
@@ -213,7 +266,7 @@
   <main>
     <!-- HERO -->
     <section class="bg-slate-900 text-white py-16 lg:py-20 relative">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl mx-auto space-y-4">
+      <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl mx-auto space-y-4">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">Our Distinguished
           Faculty</h1>
         <p class="text-slate-300 text-base sm:text-lg">
@@ -225,9 +278,9 @@
 
     <!-- FACULTY LEADERSHIP SHOWCASE -->
     <section class="py-12 bg-slate-50 border-b border-slate-200">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white group">
-          <div class="relative h-[360px] sm:h-[420px] overflow-hidden">
+          <div class="relative h-[22.5rem] sm:h-[26.25rem] overflow-hidden">
             <img src="public/images/hopewellTeamCollege.webp"
               alt="Hopewell Faculty and Academic Mentors Team"
               title="Hopewell Academic Faculty Team"
@@ -245,7 +298,7 @@
 
     <!-- FACULTY DIRECTORY GRID -->
     <section class="py-20 bg-white">
-      <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -300,7 +353,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 relative overflow-hidden">
-    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Main Footer Flexbox Container: 1 Single Line on Desktop (lg) with perfect spacing -->
       <div
@@ -409,7 +462,7 @@
             </p>
             <div class="pt-3">
               <button
-                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-sky-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+                class="open-admission-modal w-full py-3 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-emerald-600/30 active:scale-95 text-white font-semibold text-sm sm:text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
                 Enquire Online
               </button>
             </div>
