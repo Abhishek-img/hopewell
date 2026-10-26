@@ -544,3 +544,157 @@ html {
   border-radius: 9999px;
   box-shadow: 0 0 10px rgba(5, 150, 105, 0.5) !important;
 }
+
+/* ==========================================================================
+   CREATIVE SOCIAL MEDIA ICONS & CHANNELS
+   High-end glassmorphism, brand glows, sheen hover animations
+   ========================================================================== */
+
+/* Topbar Social Pill Capsule */
+.social-topbar-btn {
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.social-topbar-btn svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  transition: transform 0.3s ease;
+}
+
+.social-topbar-btn:hover {
+  transform: scale(1.15) translateY(-1px);
+}
+
+.social-topbar-btn:hover svg {
+  transform: scale(1.1);
+}
+
+/* Individual Topbar Brands */
+.social-topbar-btn.social-fb { color: #38bdf8; }
+.social-topbar-btn.social-fb:hover {
+  background: #1877f2;
+  color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 14px rgba(24, 119, 242, 0.45);
+}
+
+.social-topbar-btn.social-ig { color: #f472b6; }
+.social-topbar-btn.social-ig:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  border-color: #f43f5e;
+  box-shadow: 0 4px 14px rgba(225, 48, 108, 0.45);
+}
+
+.social-topbar-btn.social-wa { color: #4ade80; }
+.social-topbar-btn.social-wa:hover {
+  background: #25d366;
+  color: #ffffff;
+  border-color: #22c55e;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.45);
+}
+
+.social-topbar-btn.social-yt { color: #f87171; }
+.social-topbar-btn.social-yt:hover {
+  background: #ff0000;
+  color: #ffffff;
+  border-color: #ef4444;
+  box-shadow: 0 4px 14px rgba(255, 0, 0, 0.45);
+}
+
+/* Footer Social Hub Cards */
+.social-footer-card {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.875rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(71, 85, 105, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.social-footer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  transform: skewX(-25deg);
+  transition: all 0.65s ease;
+}
+
+.social-footer-card:hover::before {
+  left: 140%;
+}
+
+.social-footer-card svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.35s ease;
+}
+
+.social-footer-card:hover {
+  transform: translateY(-4px) scale(1.08);
+}
+
+.social-footer-card:hover svg {
+  transform: scale(1.12);
+}
+
+/* Footer Brand Specific Highlights */
+.social-footer-card.social-fb-card {
+  color: #60a5fa;
+}
+.social-footer-card.social-fb-card:hover {
+  background: #1877f2;
+  color: #ffffff;
+  border-color: #60a5fa;
+  box-shadow: 0 10px 25px -3px rgba(24, 119, 242, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.social-footer-card.social-ig-card {
+  color: #f472b6;
+}
+.social-footer-card.social-ig-card:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  border-color: #fb7185;
+  box-shadow: 0 10px 25px -3px rgba(225, 48, 108, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.social-footer-card.social-wa-card {
+  color: #4ade80;
+}
+.social-footer-card.social-wa-card:hover {
+  background: #25d366;
+  color: #ffffff;
+  border-color: #4ade80;
+  box-shadow: 0 10px 25px -3px rgba(37, 211, 102, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.social-footer-card.social-yt-card {
+  color: #f87171;
+}
+.social-footer-card.social-yt-card:hover {
+  background: #ff0000;
+  color: #ffffff;
+  border-color: #f87171;
+  box-shadow: 0 10px 25px -3px rgba(255, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
