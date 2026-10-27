@@ -108,15 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         const filter = btn.getAttribute('data-filter');
+
         filterBtns.forEach(b => {
-          b.classList.remove('bg-sky-600', 'text-white');
-          b.classList.add('bg-white', 'text-slate-700', 'hover:bg-slate-100');
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
         });
-        btn.classList.add('bg-sky-600', 'text-white');
-        btn.classList.remove('bg-white', 'text-slate-700', 'hover:bg-slate-100');
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
 
         galleryItems.forEach(item => {
-          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
             item.classList.remove('hidden');
           } else {
             item.classList.add('hidden');

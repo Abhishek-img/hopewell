@@ -466,3 +466,35 @@ body {
   border-color: #f87171;
   box-shadow: 0 10px 25px -3px rgba(255, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
+
+/* ==========================================================================
+   GALLERY FILTER TABS
+   ========================================================================== */
+.gallery-filter-btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  font-weight: 700 !important;
+}
+
+.gallery-filter-btn.active {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  box-shadow: 0 4px 14px 0 rgba(5, 150, 105, 0.35) !important;
+  transform: translateY(-1px);
+}
+
+.gallery-filter-btn:not(.active) {
+  background-color: #edf3f1 !important;
+  color: #334155 !important;
+  border-color: #cbdcd6 !important;
+}
+
+.gallery-filter-btn:not(.active):hover {
+  background-color: #e2ece8 !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+  transform: translateY(-1px);
+}
+
