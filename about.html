@@ -115,7 +115,7 @@
         <div
           class="flex items-center gap-1.5 bg-slate-950/70 border border-slate-800/80 px-2 py-0.5 rounded-full shadow-inner backdrop-blur-md">
           <span
-            class="text-[10px] uppercase font-bold tracking-wider text-slate-400 hidden xl:inline-block pr-1">Follow:</span>
+            class="text-[0.625rem] uppercase font-bold tracking-wider text-slate-400 hidden xl:inline-block pr-1">Follow:</span>
           <a href="https://www.facebook.com/share/18biVCEXKh/" target="_blank" rel="noopener noreferrer"
             title="Hopewell Colleges on Facebook" class="social-topbar-btn social-fb">
             <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -276,15 +276,31 @@
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">About Us</a>
 
       <div class="space-y-1">
-        <div class="px-4 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">Courses</div>
-        <a href="bsc-nursing.html" title="B.Sc Nursing"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
-        <a href="gnm.html" title="GNM Diploma"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
-        <a href="d-pharmacy.html" title="D.Pharmacy"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
-        <a href="danp.html" title="DAN&P Ayurved Nursing"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">DAN&P Ayurved (2.6 Yrs)</a>
+        <button type="button"
+          class="mobile-courses-btn flex items-center justify-between w-full px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100 hover:bg-slate-50 text-left transition-colors cursor-pointer">
+          <span>Courses</span>
+          <i data-lucide="chevron-down" class="mobile-courses-icon w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+        </button>
+        <div class="mobile-courses-submenu hidden pl-3 space-y-1 pt-1">
+          <a href="courses.html" title="All Courses"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/70 lg:hover:bg-sky-50">All Courses Overview &rarr;</a>
+          <a href="bsc-nursing.html" title="B.Sc Nursing"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
+          <a href="gnm.html" title="GNM Diploma"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
+          <a href="d-pharmacy.html" title="D.Pharmacy"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
+          <a href="danp.html" title="DAN&P Ayurved Nursing"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">DAN&P Ayurved (2.6 Yrs)</a>
+          <a href="index.html#careers" title="Career Opportunities"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/60 lg:hover:bg-sky-50">
+            <i data-lucide="compass" class="w-3.5 h-3.5 inline mr-1"></i> Career Pathways
+          </a>
+          <a href="index.html#placements" title="Hospital Placements"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-teal-600 bg-teal-50/60 lg:hover:bg-teal-50">
+            <i data-lucide="award" class="w-3.5 h-3.5 inline mr-1"></i> Hospital Placements
+          </a>
+        </div>
       </div>
 
       <a href="admissions.html" title="Admissions Process"
@@ -308,7 +324,7 @@
 
   <main>
     <!-- CREATIVE HERO BANNER SECTION WITH CAMPUS IMAGE OVERLAY -->
-    <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden border-b border-slate-800/80">
+    <section class="relative bg-slate-950 text-white py-16 overflow-hidden border-b border-slate-800/80">
       <div class="absolute inset-0 z-0">
         <img src="public/images/hopwellCampusSideView.webp" alt="Hopewell Colleges Campus and Nursing Students"
           title="Hopewell Group of Colleges Alwar" loading="eager" fetchpriority="high"
@@ -351,25 +367,25 @@
             <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800/90 backdrop-blur-md space-y-1">
               <div class="text-3xl font-extrabold text-sky-400">18+</div>
               <div class="text-xs font-bold text-white uppercase tracking-wider">Years Legacy</div>
-              <div class="text-[11px] text-slate-400 mt-1">Educating healthcare leaders in Rajasthan</div>
+              <div class="text-[0.6875rem] text-slate-400 mt-1">Educating healthcare leaders in Rajasthan</div>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800/90 backdrop-blur-md space-y-1">
               <div class="text-3xl font-extrabold text-teal-400">100%</div>
               <div class="text-xs font-bold text-white uppercase tracking-wider">Clinical Ward</div>
-              <div class="text-[11px] text-slate-400 mt-1">Multi-specialty hospital postings</div>
+              <div class="text-[0.6875rem] text-slate-400 mt-1">Multi-specialty hospital postings</div>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800/90 backdrop-blur-md space-y-1">
               <div class="text-3xl font-extrabold text-indigo-400">4 Main</div>
               <div class="text-xs font-bold text-white uppercase tracking-wider">Approved Programs</div>
-              <div class="text-[11px] text-slate-400 mt-1">B.Sc, GNM, D.Pharm & DAN&P</div>
+              <div class="text-[0.6875rem] text-slate-400 mt-1">B.Sc, GNM, D.Pharm & DAN&P</div>
             </div>
 
             <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800/90 backdrop-blur-md space-y-1">
               <div class="text-3xl font-extrabold text-emerald-400">Govt.</div>
               <div class="text-xs font-bold text-white uppercase tracking-wider">Recognized</div>
-              <div class="text-[11px] text-slate-400 mt-1">RUHS, INC, RNC, PCI, RANC</div>
+              <div class="text-[0.6875rem] text-slate-400 mt-1">RUHS, INC, RNC, PCI, RANC</div>
             </div>
           </div>
 
@@ -814,16 +830,16 @@
     class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
     <div
       class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 max-h-[90vh] overflow-y-auto">
-      <button id="close-admission-modal" title="Close Admission Form"
-        class="absolute top-6 right-6 text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+      <button id="close-admission-modal" type="button" title="Close Admission Form"
+        class="absolute top-6 right-6 text-slate-400 hover:text-slate-700 p-1 rounded-lg cursor-pointer transition-colors">
         <i data-lucide="x" class="w-6 h-6"></i>
       </button>
 
-      <div class="space-y-2 mb-6">
-        <span class="text-sky-600 text-xs font-bold uppercase tracking-wider">Direct Admission Enquiry</span>
-        <h3 class="text-2xl font-extrabold text-slate-900">Apply to Hopewell Colleges</h3>
-        <p class="text-xs text-slate-500">Fill your details below and our admission counselor will call you within 24
-          hours.</p>
+      <div class="space-y-1 mb-6">
+        <span class="text-sky-600 text-xs font-bold uppercase tracking-wider">Admission Enquiry</span>
+        <h3 class="text-2xl font-extrabold text-slate-900">Hopewell Group of Colleges</h3>
+        <p class="text-xs text-slate-500">Fill in your information below and our admissions team will contact you
+          promptly.</p>
       </div>
 
       <form class="space-y-4">
@@ -835,38 +851,52 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Phone *</label>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Number *</label>
             <input type="tel" required placeholder="10-digit mobile number"
               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
           </div>
           <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email</label>
             <input type="email" placeholder="student@example.com"
               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
           </div>
         </div>
 
         <div>
-          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Select Program *</label>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Course of Interest *</label>
           <select required
             class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-white">
-            <option value="">-- Choose Course --</option>
-            <option value="bsc-nursing">B.Sc. Nursing (4 Years Degree)</option>
-            <option value="gnm">GNM Nursing (3 Years Diploma)</option>
-            <option value="d-pharmacy">D.Pharmacy (2 Years Diploma)</option>
-            <option value="danp">DAN&P Ayurved Nursing (2.6 Years Diploma)</option>
+            <option value="">-- Select Course --</option>
+            <option value="bsc-nursing">B.Sc. Nursing (Bachelor of Science in Nursing)</option>
+            <option value="gnm">GNM (General Nursing and Midwifery)</option>
+            <option value="d-pharmacy">D. Pharmacy (Diploma in Pharmacy)</option>
+            <option value="danp">DAN&P (Diploma in Ayush Nursing & Pharmacy)</option>
           </select>
         </div>
 
         <div>
-          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">City / District</label>
-          <input type="text" placeholder="e.g. Alwar, Jaipur, Delhi"
-            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Highest Qualification *</label>
+          <select required
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-white">
+            <option value="">-- Select Highest Qualification --</option>
+            <option value="12-pcb">10+2 Science (PCB)</option>
+            <option value="12-pcm">10+2 Science (PCM)</option>
+            <option value="12-arts-comm">10+2 Arts / Commerce</option>
+            <option value="10th">10th Standard</option>
+            <option value="graduate">Graduate Degree</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message</label>
+          <textarea rows="3" placeholder="Enter your enquiry or message here..."
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"></textarea>
         </div>
 
         <button type="submit"
-          class="w-full py-3.5 bg-sky-600 lg:hover:bg-sky-500 lg:hover:-translate-y-0.5 lg:hover:shadow-lg lg:hover:shadow-emerald-600/30 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
-          Submit Application Request
+          class="w-full py-3.5 bg-sky-600 hover:bg-sky-500 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+          Submit Enquiry
         </button>
       </form>
     </div>
@@ -1051,7 +1081,8 @@
       <!-- Copyright & Bottom Links Flex Container -->
       <div
         class="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-sm sm:text-base text-slate-400 font-medium">
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 text-center lg:text-left">
+        <div
+          class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 text-center lg:text-left">
           <span>
             © 2026 All Rights Reserved.
           </span>

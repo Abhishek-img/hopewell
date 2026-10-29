@@ -106,7 +106,7 @@
 
         <!-- Creative Social Media Channels Capsule Strip -->
         <div class="flex items-center gap-1.5 bg-slate-950/70 border border-slate-800/80 px-2 py-0.5 rounded-full shadow-inner backdrop-blur-md">
-          <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 hidden xl:inline-block pr-1">Follow:</span>
+          <span class="text-[0.625rem] uppercase font-bold tracking-wider text-slate-400 hidden xl:inline-block pr-1">Follow:</span>
           <a href="https://www.facebook.com/share/18biVCEXKh/" target="_blank" rel="noopener noreferrer"
             title="Hopewell Colleges on Facebook"
             class="social-topbar-btn social-fb">
@@ -259,15 +259,31 @@
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">About Us</a>
 
       <div class="space-y-1">
-        <div class="px-4 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">Courses</div>
-        <a href="bsc-nursing.html" title="B.Sc Nursing"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
-        <a href="gnm.html" title="GNM Diploma"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
-        <a href="d-pharmacy.html" title="D.Pharmacy"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
-        <a href="danp.html" title="DAN&P Ayurved Nursing"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">DAN&P Ayurved (2.6 Yrs)</a>
+        <button type="button"
+          class="mobile-courses-btn flex items-center justify-between w-full px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100 hover:bg-slate-50 text-left transition-colors cursor-pointer">
+          <span>Courses</span>
+          <i data-lucide="chevron-down" class="mobile-courses-icon w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+        </button>
+        <div class="mobile-courses-submenu hidden pl-3 space-y-1 pt-1">
+          <a href="courses.html" title="All Courses"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/70 lg:hover:bg-sky-50">All Courses Overview &rarr;</a>
+          <a href="bsc-nursing.html" title="B.Sc Nursing"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
+          <a href="gnm.html" title="GNM Diploma"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
+          <a href="d-pharmacy.html" title="D.Pharmacy"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
+          <a href="danp.html" title="DAN&P Ayurved Nursing"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">DAN&P Ayurved (2.6 Yrs)</a>
+          <a href="index.html#careers" title="Career Opportunities"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/60 lg:hover:bg-sky-50">
+            <i data-lucide="compass" class="w-3.5 h-3.5 inline mr-1"></i> Career Pathways
+          </a>
+          <a href="index.html#placements" title="Hospital Placements"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-teal-600 bg-teal-50/60 lg:hover:bg-teal-50">
+            <i data-lucide="award" class="w-3.5 h-3.5 inline mr-1"></i> Hospital Placements
+          </a>
+        </div>
       </div>
 
       <a href="admissions.html" title="Admissions Process"
@@ -300,14 +316,14 @@
         <!-- Dual Gradient Overlays for High Contrast & Sophistication -->
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/70"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60"></div>
-        <div class="absolute inset-0 bg-slate-950/30 backdrop-blur-[2px]"></div>
+        <div class="absolute inset-0 bg-slate-950/30 backdrop-blur-[0.125rem]"></div>
       </div>
       <!-- Ambient Dynamic Glow Lights -->
       <div class="absolute inset-0 opacity-40 pointer-events-none z-0">
         <div
-          class="absolute -top-40 -left-40 w-[30rem] h-[30rem] bg-sky-600 rounded-full filter blur-[140px] animate-pulse">
+          class="absolute -top-40 -left-40 w-[30rem] h-[30rem] bg-sky-600 rounded-full filter blur-[8.75rem] animate-pulse">
         </div>
-        <div class="absolute -bottom-40 right-0 w-[30rem] h-[30rem] bg-teal-500 rounded-full filter blur-[140px]"></div>
+        <div class="absolute -bottom-40 right-0 w-[30rem] h-[30rem] bg-teal-500 rounded-full filter blur-[8.75rem]"></div>
       </div>
       <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -664,6 +680,82 @@
       </div>
     </section>
   </main>
+
+  <!-- QUICK ADMISSION MODAL -->
+  <div id="admission-modal"
+    class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div
+      class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 max-h-[90vh] overflow-y-auto">
+      <button id="close-admission-modal" type="button" title="Close Admission Form"
+        class="absolute top-6 right-6 text-slate-400 hover:text-slate-700 p-1 rounded-lg cursor-pointer transition-colors">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="space-y-1 mb-6">
+        <span class="text-sky-600 text-xs font-bold uppercase tracking-wider">Admission Enquiry</span>
+        <h3 class="text-2xl font-extrabold text-slate-900">Hopewell Group of Colleges</h3>
+        <p class="text-xs text-slate-500">Fill in your information below and our admissions team will contact you promptly.</p>
+      </div>
+
+      <form class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+          <input type="text" required placeholder="Enter student's full name"
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mobile Number *</label>
+            <input type="tel" required placeholder="10-digit mobile number"
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email</label>
+            <input type="email" placeholder="student@example.com"
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Course of Interest *</label>
+          <select required
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-white">
+            <option value="">-- Select Course --</option>
+            <option value="bsc-nursing">B.Sc. Nursing (Bachelor of Science in Nursing)</option>
+            <option value="gnm">GNM (General Nursing and Midwifery)</option>
+            <option value="d-pharmacy">D. Pharmacy (Diploma in Pharmacy)</option>
+            <option value="danp">DAN&P (Diploma in Ayush Nursing & Pharmacy)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Highest Qualification *</label>
+          <select required
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm bg-white">
+            <option value="">-- Select Highest Qualification --</option>
+            <option value="12-pcb">10+2 Science (PCB)</option>
+            <option value="12-pcm">10+2 Science (PCM)</option>
+            <option value="12-arts-comm">10+2 Arts / Commerce</option>
+            <option value="10th">10th Standard</option>
+            <option value="graduate">Graduate Degree</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message</label>
+          <textarea rows="3" placeholder="Enter your enquiry or message here..."
+            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full py-3.5 bg-sky-600 hover:bg-sky-500 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+          Submit Enquiry
+        </button>
+      </form>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800 relative overflow-hidden">

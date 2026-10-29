@@ -159,7 +159,7 @@
         <div
           class="flex items-center gap-1.5 bg-slate-950/70 border border-slate-800/80 px-2 py-0.5 rounded-full shadow-inner backdrop-blur-md">
           <span
-            class="text-[10px] uppercase font-bold tracking-wider text-slate-400 hidden xl:inline-block pr-1">Follow:</span>
+            class="text-[0.625rem] uppercase font-bold tracking-wider text-slate-400 hidden xl:inline-block pr-1">Follow:</span>
           <a href="https://www.facebook.com/share/18biVCEXKh/" target="_blank" rel="noopener noreferrer"
             title="Hopewell Colleges on Facebook" class="social-topbar-btn social-fb">
             <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -215,23 +215,33 @@
         class="block px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100">About Us</a>
 
       <div class="space-y-1">
-        <div class="px-4 py-2 text-xs font-bold text-slate-400 uppercase tracking-wider">Courses</div>
-        <a href="bsc-nursing.html" title="B.Sc Nursing"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
-        <a href="gnm.html" title="GNM Diploma"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
-        <a href="d-pharmacy.html" title="D.Pharmacy"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
-        <a href="danp.html" title="DAN&P Ayurved Nursing"
-          class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">DAN&P Ayurved (2.6 Yrs)</a>
-        <a href="#careers" title="Career Opportunities"
-          class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/60 lg:hover:bg-sky-50">
-          <i data-lucide="compass" class="w-3.5 h-3.5 inline mr-1"></i> Career Pathways
-        </a>
-        <a href="#placements" title="Hospital Placements"
-          class="block px-4 py-2 rounded-xl text-sm font-semibold text-teal-600 bg-teal-50/60 lg:hover:bg-teal-50">
-          <i data-lucide="award" class="w-3.5 h-3.5 inline mr-1"></i> Hospital Placements
-        </a>
+        <button type="button"
+          class="mobile-courses-btn flex items-center justify-between w-full px-4 py-2.5 rounded-xl font-medium text-slate-700 lg:hover:bg-slate-100 hover:bg-slate-50 text-left transition-colors cursor-pointer">
+          <span>Courses</span>
+          <i data-lucide="chevron-down"
+            class="mobile-courses-icon w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+        </button>
+        <div class="mobile-courses-submenu hidden pl-3 space-y-1 pt-1">
+          <a href="courses.html" title="All Courses"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/70 lg:hover:bg-sky-50">All
+            Courses Overview &rarr;</a>
+          <a href="bsc-nursing.html" title="B.Sc Nursing"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">B.Sc Nursing (4 Yrs)</a>
+          <a href="gnm.html" title="GNM Diploma"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">GNM Nursing (3 Yrs)</a>
+          <a href="d-pharmacy.html" title="D.Pharmacy"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">D.Pharmacy (2 Yrs)</a>
+          <a href="danp.html" title="DAN&P Ayurved Nursing"
+            class="block px-4 py-2 rounded-xl text-sm text-slate-700 lg:hover:bg-slate-100">DAN&P Ayurved (2.6 Yrs)</a>
+          <a href="#careers" title="Career Opportunities"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-sky-600 bg-sky-50/60 lg:hover:bg-sky-50">
+            <i data-lucide="compass" class="w-3.5 h-3.5 inline mr-1"></i> Career Pathways
+          </a>
+          <a href="#placements" title="Hospital Placements"
+            class="block px-4 py-2 rounded-xl text-sm font-semibold text-teal-600 bg-teal-50/60 lg:hover:bg-teal-50">
+            <i data-lucide="award" class="w-3.5 h-3.5 inline mr-1"></i> Hospital Placements
+          </a>
+        </div>
       </div>
 
       <a href="admissions.html" title="Admissions Process"
@@ -379,7 +389,7 @@
 
         <!-- Top Illuminated Subtle Glow Bar -->
         <div
-          class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-sky-400 to-transparent z-40 pointer-events-none">
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-[0.125rem] bg-gradient-to-r from-transparent via-sky-400 to-transparent z-40 pointer-events-none">
         </div>
 
         <!-- Ambient Atmospheric Lighting Orbs inside Hero -->
@@ -396,8 +406,103 @@
           id="hero-slider">
           <div class="swiper hero-swiper w-full h-full">
             <div class="swiper-wrapper">
+              <!-- SLIDE 1: Hopewell College Campus & Infrastructure -->
+              <div class="swiper-slide relative w-full h-full overflow-hidden">
+                <img src="public/images/hopewellCollegeImg4.webp"
+                  alt="Hopewell Group of Colleges Lush Green Campus Building"
+                  title="Hopewell Group of Colleges Campus in Alwar, Rajasthan"
+                  class="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out">
 
-              <!-- SLIDE 1: B.Sc. Nursing -->
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/45 to-slate-950/90"></div>
+                <div
+                  class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(14,165,233,0.22)_0%,_transparent_75%)]">
+                </div>
+
+                <!-- Full Size Slide Content -->
+                <div
+                  class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 sm:px-8 lg:px-12 pt-20 sm:pt-24 lg:pt-28 pb-8 sm:pb-10">
+                  <div class="max-w-5xl mx-auto flex flex-col items-center">
+
+                    <div
+                      class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/20 text-xs font-bold text-white shadow-xl mb-3 sm:mb-4">
+                      <span class="flex h-2 w-2 relative">
+                        <span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                      </span>
+                      <span class="text-sky-300 font-extrabold uppercase tracking-wider text-[0.6875rem] sm:text-xs">Hopewell
+                        Campus & Infrastructure</span>
+                      <span class="text-white/30 sm:inline-flex hidden">•</span>
+                      <span class="text-slate-200 sm:inline-flex hidden">Alwar, Rajasthan</span>
+                    </div>
+
+                    <h1
+                      class="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[4.75rem] font-black tracking-tight leading-[1.06] drop-shadow-2xl mb-3 sm:mb-5">
+                      World-Class Campus
+                      <span
+                        class="block text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.2rem] font-black bg-gradient-to-r from-sky-300 via-teal-200 to-emerald-200 bg-clip-text text-transparent mt-1 sm:mt-2 drop-shadow-lg">
+                        & Educational Facilities
+                      </span>
+                    </h1>
+
+                    <p
+                      class="max-w-3xl text-slate-100 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed drop-shadow-md mb-4 sm:mb-6">
+                      Experience a lush green institutional campus equipped with advanced medical & pharmacy
+                      laboratories, smart digital lecture halls, 100+ bed hospital training exposure, and comprehensive
+                      student amenities.
+                    </p>
+
+                    <div
+                      class="hidden sm:inline-flex items-center justify-center flex-wrap gap-3 py-1 text-xs sm:text-sm text-slate-200 font-medium mb-5 sm:mb-6">
+                      <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm"><i
+                          data-lucide="building-2" class="w-4 h-4 text-sky-400"></i> Lush Green Campus</span>
+                      <span class="text-white/30">•</span>
+                      <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm"><i
+                          data-lucide="flask-conical" class="w-4 h-4 text-teal-400"></i> Advanced Laboratories</span>
+                      <span class="text-white/30">•</span>
+                      <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm"><i
+                          data-lucide="award" class="w-4 h-4 text-amber-300"></i> 100% Placement Support</span>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                      <a href="campus.html" title="Explore Hopewell Campus"
+                        class="btn-creative px-6 sm:px-8 py-3 text-sm sm:text-base font-bold shadow-xl shadow-emerald-600/30">
+                        <i data-lucide="compass" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
+                        <span>Explore Campus</span>
+                      </a>
+                      <a href="facilities.html" title="View Campus Facilities"
+                        class="btn-creative px-6 sm:px-8 py-3 text-sm sm:text-base font-bold shadow-xl shadow-emerald-600/30">
+                        <i data-lucide="layers" class="w-4 h-4 sm:w-5 sm:h-5 text-sky-300"></i>
+                        <span>Our Facilities</span>
+                      </a>
+                      <button title="Enquire About Admissions"
+                        class="open-admission-modal btn-creative px-6 sm:px-8 py-3 text-sm sm:text-base font-bold shadow-xl shadow-emerald-600/30">
+                        <i data-lucide="file-text" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
+                        <span>Enquire Now</span>
+                      </button>
+                    </div>
+
+                    <!-- Floating Trust Strip -->
+                    <div
+                      class="hidden md:inline-flex items-center gap-3 px-5 py-2 rounded-full bg-slate-950/75 backdrop-blur-md border border-white/20 text-xs font-semibold text-slate-200 shadow-xl mt-4">
+                      <span class="inline-flex items-center gap-1.5 text-sky-300"><i data-lucide="shield-check"
+                          class="w-4 h-4"></i> Govt. Recognized: INC • PCI • RNC • RUHS • RANC</span>
+                      <span class="text-white/20">|</span>
+                      <span class="inline-flex items-center gap-1.5 text-teal-300"><i data-lucide="activity"
+                          class="w-4 h-4"></i> Hospital Practical Training</span>
+                      <span class="text-white/20">|</span>
+                      <span class="inline-flex items-center gap-1.5 text-amber-300"><i data-lucide="award"
+                          class="w-4 h-4"></i> 100% Placement Support</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2: B.Sc. Nursing -->
               <div class="swiper-slide relative w-full h-full overflow-hidden">
                 <img src="public/images/hopewellStudents.webp" alt="Hopewell B.Sc. Nursing Students"
                   title="B.Sc Nursing at Hopewell Colleges"
@@ -422,7 +527,7 @@
                           class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                       </span>
-                      <span class="text-sky-300 font-extrabold uppercase tracking-wider text-[11px] sm:text-xs">HOPEWELL
+                      <span class="text-sky-300 font-extrabold uppercase tracking-wider text-[0.6875rem] sm:text-xs">HOPEWELL
                         GROUP OF COLLEGES</span>
                       <span class="text-white/30 sm:inline-flex hidden">•</span>
                       <span class="text-slate-200 sm:inline-flex hidden">Knowledge. Skills. Compassion.</span>
@@ -501,7 +606,7 @@
                 </div>
               </div>
 
-              <!-- SLIDE 2: GNM Nursing -->
+              <!-- SLIDE 3: GNM Nursing -->
               <div class="swiper-slide relative w-full h-full overflow-hidden">
                 <img src="public/images/hopewellBloodDonationGirls.webp" alt="Hopewell GNM Nursing Training"
                   title="GNM Nursing at Hopewell Colleges"
@@ -525,7 +630,7 @@
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                       </span>
                       <span
-                        class="text-teal-300 font-extrabold uppercase tracking-wider text-[11px] sm:text-xs">Admissions
+                        class="text-teal-300 font-extrabold uppercase tracking-wider text-[0.6875rem] sm:text-xs">Admissions
                         Open 2026-27</span>
                       <span class="text-white/30 sm:inline-flex hidden">•</span>
                       <span class="text-slate-200 sm:inline-flex hidden">3 Year Professional Diploma</span>
@@ -597,7 +702,7 @@
                 </div>
               </div>
 
-              <!-- SLIDE 3: D.Pharmacy -->
+              <!-- SLIDE 4: D.Pharmacy -->
               <div class="swiper-slide relative w-full h-full overflow-hidden">
                 <img src="public/images/hopewellLab2.webp" alt="Hopewell D.Pharmacy Chemistry Lab"
                   title="D.Pharmacy Lab at Hopewell"
@@ -621,7 +726,7 @@
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                       </span>
                       <span
-                        class="text-indigo-300 font-extrabold uppercase tracking-wider text-[11px] sm:text-xs">Admissions
+                        class="text-indigo-300 font-extrabold uppercase tracking-wider text-[0.6875rem] sm:text-xs">Admissions
                         Open 2026-27</span>
                       <span class="text-white/30 sm:inline-flex hidden">•</span>
                       <span class="text-slate-200 sm:inline-flex hidden">2 Year Diploma</span>
@@ -692,7 +797,7 @@
                 </div>
               </div>
 
-              <!-- SLIDE 4: DAN&P Ayurved -->
+              <!-- SLIDE 5: DAN&P Ayurved -->
               <div class="swiper-slide relative w-full h-full overflow-hidden">
                 <img src="public/images/hopewellPharmcyBloodDonaition.webp" alt="Hopewell DAN&P Herbal Workstation"
                   title="DAN&P Ayurved at Hopewell"
@@ -716,7 +821,7 @@
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                       </span>
                       <span
-                        class="text-emerald-300 font-extrabold uppercase tracking-wider text-[11px] sm:text-xs">Admissions
+                        class="text-emerald-300 font-extrabold uppercase tracking-wider text-[0.6875rem] sm:text-xs">Admissions
                         Open 2026-27</span>
                       <span class="text-white/30 sm:inline-flex hidden">•</span>
                       <span class="text-slate-200 sm:inline-flex hidden">2.6 Year Diploma</span>
@@ -804,7 +909,7 @@
               class="cursor-pointer bg-slate-950/85 hover:bg-slate-950/95 backdrop-blur-xl border border-white/15 p-2.5 sm:p-3 rounded-xl sm:rounded-2xl flex gap-2.5 sm:gap-3.5 items-center shadow-2xl relative overflow-hidden group/card transition-all duration-300">
 
               <!-- Animated Autoplay Progress Bar along bottom -->
-              <div class="absolute bottom-0 left-0 w-full h-[2.5px] bg-white/15">
+              <div class="absolute bottom-0 left-0 w-full h-[0.15625rem] bg-white/15">
                 <div id="hero-card-progress" class="h-full bg-sky-400 w-0 transition-all duration-100 ease-linear">
                 </div>
               </div>
@@ -818,11 +923,11 @@
 
               <!-- Next Slide Info & Navigation Controls -->
               <div class="flex-1 min-w-0 pr-0.5">
-                <div class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-sky-400 mb-0.5">Up Next
+                <div class="text-[0.5625rem] sm:text-[0.625rem] font-bold uppercase tracking-wider text-sky-400 mb-0.5">Up Next
                 </div>
                 <h4 id="hero-next-title" class="text-white text-xs sm:text-sm font-bold truncate leading-tight mb-0.5">
                   GNM Nursing</h4>
-                <p id="hero-next-desc" class="text-slate-300 text-[10px] sm:text-[11px] truncate mb-1">3 Year
+                <p id="hero-next-desc" class="text-slate-300 text-[0.625rem] sm:text-[0.6875rem] truncate mb-1">3 Year
                   Professional Diploma</p>
 
                 <!-- Prev / Next Controls -->
@@ -867,7 +972,8 @@
               <!-- Slide 1: B.Sc Nursing -->
               <div class="swiper-slide h-auto">
                 <div
-                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  class="course-card-clickable bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group cursor-pointer"
+                  data-href="bsc-nursing.html" role="link" tabindex="0">
                   <div class="relative h-48 overflow-hidden">
                     <img src="public/images/hopewellLab3.webp" alt="B.Sc Nursing practical laboratory training"
                       title="B.Sc Nursing Course at Hopewell Colleges" loading="lazy"
@@ -946,7 +1052,8 @@
               <!-- Slide 2: GNM Nursing -->
               <div class="swiper-slide h-auto">
                 <div
-                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  class="course-card-clickable bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group cursor-pointer"
+                  data-href="gnm.html" role="link" tabindex="0">
                   <div class="relative h-48 overflow-hidden">
                     <img src="public/images/hopewellStudentBloodDonation.webp"
                       alt="GNM nursing midwifery students in clinical practice" title="GNM Course at Hopewell Colleges"
@@ -1020,7 +1127,8 @@
               <!-- Slide 3: D.Pharmacy -->
               <div class="swiper-slide h-auto">
                 <div
-                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  class="course-card-clickable bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group cursor-pointer"
+                  data-href="d-pharmacy.html" role="link" tabindex="0">
                   <div class="relative h-48 overflow-hidden">
                     <img src="public/images/hopewellLab.webp" alt="D.Pharmacy student conducting experiment in lab"
                       title="D.Pharmacy Course at Hopewell Colleges" loading="lazy"
@@ -1092,7 +1200,8 @@
               <!-- Slide 4: DAN&P Ayurved -->
               <div class="swiper-slide h-auto">
                 <div
-                  class="bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group">
+                  class="course-card-clickable bg-slate-50 rounded-3xl border border-slate-200/80 overflow-hidden card-hover flex flex-col justify-between h-full group cursor-pointer"
+                  data-href="danp.html" role="link" tabindex="0">
                   <div class="relative h-48 overflow-hidden">
                     <img src="public/images/hopewellAllYoga.webp" alt="Ayurvedic nursing and herbal pharmacology lab"
                       title="DAN&P Ayurved Course at Hopewell Colleges" loading="lazy"
@@ -1195,7 +1304,7 @@
           </div>
 
           <div class="overflow-x-auto bg-white rounded-3xl border border-slate-200/80 shadow-md">
-            <table class="w-full text-left text-xs sm:text-sm text-slate-700 min-w-[42.5rem]">
+            <table class="w-full text-left text-xs sm:text-sm text-slate-700 min-w-[42.5rem] whitespace-nowrap">
               <thead class="bg-slate-900 text-white text-xs uppercase font-bold tracking-wider">
                 <tr>
                   <th class="p-4 sm:p-5">Course</th>
@@ -1215,15 +1324,15 @@
                     <div class="font-bold text-slate-900 text-sm">1. B.Sc.NURSING</div>
                     <div class="flex items-center gap-1.5 mt-1 flex-wrap">
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/rushJaipurLogo.webp" alt="RUHS"
                           class="w-3.5 h-3.5 rounded-full object-contain"> RUHS</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/INCNewDelhiLogo.webp" alt="INC"
                           class="w-3.5 h-3.5 rounded-full object-contain"> INC</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/RNCJaipurLogo.webp" alt="RNC"
                           class="w-3.5 h-3.5 rounded-full object-contain"> RNC</span>
                     </div>
@@ -1237,7 +1346,7 @@
                   <td class="p-4 sm:p-5 font-medium text-slate-700">10+2 with PCB</td>
                   <td class="p-4 sm:p-5">
                     <div class="font-semibold text-slate-900">Minimum 17 YEARS Maximum 25 YEARS</div>
-                    <span class="text-[10px] text-emerald-600 font-medium block mt-0.5">SC/ST +5 Yrs, OBC +3 Yrs</span>
+                    <span class="text-[0.625rem] text-emerald-600 font-medium block mt-0.5">SC/ST +5 Yrs, OBC +3 Yrs</span>
                   </td>
                   <td class="p-4 sm:p-5">
                     <span
@@ -1258,13 +1367,13 @@
                   <td class="p-4 sm:p-5">
                     <div class="font-bold text-slate-900 text-sm">2. GNM</div>
                     <div class="flex items-center gap-1.5 mt-1 flex-wrap">
-                      <span class="text-[11px] text-slate-500 font-medium">General Nursing •</span>
+                      <span class="text-[0.6875rem] text-slate-500 font-medium">General Nursing •</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/RNCJaipurLogo.webp" alt="RNC"
                           class="w-3.5 h-3.5 rounded-full object-contain"> RNC</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/INCNewDelhiLogo.webp" alt="INC"
                           class="w-3.5 h-3.5 rounded-full object-contain"> INC</span>
                     </div>
@@ -1278,7 +1387,7 @@
                   <td class="p-4 sm:p-5 font-medium text-slate-700">10+2 any Stream</td>
                   <td class="p-4 sm:p-5">
                     <div class="font-semibold text-slate-900">Minimum 17 YEARS Maximum 28 YEARS MALE</div>
-                    <span class="text-[10px] text-teal-600 font-medium block mt-0.5">Female candidates up to 34
+                    <span class="text-[0.625rem] text-teal-600 font-medium block mt-0.5">Female candidates up to 34
                       Yrs</span>
                   </td>
                   <td class="p-4 sm:p-5">
@@ -1300,13 +1409,13 @@
                   <td class="p-4 sm:p-5">
                     <div class="font-bold text-slate-900 text-sm">3. D.PHARMACY</div>
                     <div class="flex items-center gap-1.5 mt-1 flex-wrap">
-                      <span class="text-[11px] text-slate-500 font-medium">Pharmacy •</span>
+                      <span class="text-[0.6875rem] text-slate-500 font-medium">Pharmacy •</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/rushJaipurLogo.webp" alt="RUHS"
                           class="w-3.5 h-3.5 rounded-full object-contain"> RUHS</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/PCINewDelhiLogo.webp" alt="PCI"
                           class="w-3.5 h-3.5 rounded-full object-contain"> PCI</span>
                     </div>
@@ -1320,7 +1429,7 @@
                   <td class="p-4 sm:p-5 font-medium text-slate-700">10+2 with PCB,PCM</td>
                   <td class="p-4 sm:p-5">
                     <div class="font-semibold text-slate-900">Minimum 17 Years</div>
-                    <span class="text-[10px] text-indigo-600 font-medium block mt-0.5">No Upper Age Limit</span>
+                    <span class="text-[0.625rem] text-indigo-600 font-medium block mt-0.5">No Upper Age Limit</span>
                   </td>
                   <td class="p-4 sm:p-5">
                     <span
@@ -1341,9 +1450,9 @@
                   <td class="p-4 sm:p-5">
                     <div class="font-bold text-slate-900 text-sm">4. DAN&P</div>
                     <div class="flex items-center gap-1.5 mt-1 flex-wrap">
-                      <span class="text-[11px] text-slate-500 font-medium">AYUSH •</span>
+                      <span class="text-[0.6875rem] text-slate-500 font-medium">AYUSH •</span>
                       <span
-                        class="inline-flex items-center gap-1 text-[11px] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
+                        class="inline-flex items-center gap-1 text-[0.6875rem] text-slate-700 bg-white border border-slate-200 px-1.5 py-0.5 rounded shadow-2xs font-medium"><img
                           src="public/images/RANCRajasthanLogo.webp" alt="RANC"
                           class="w-3.5 h-3.5 rounded-full object-contain"> RANC, Rajasthan</span>
                     </div>
@@ -1358,7 +1467,7 @@
                   <td class="p-4 sm:p-5 font-medium text-slate-700">10+2 any Stream</td>
                   <td class="p-4 sm:p-5">
                     <div class="font-semibold text-slate-900">Minimum 17 Years Maximum age Limit 25 YEARS</div>
-                    <span class="text-[10px] text-emerald-600 font-medium block mt-0.5">SC/ST +5 Yrs, OBC +3 Yrs</span>
+                    <span class="text-[0.625rem] text-emerald-600 font-medium block mt-0.5">SC/ST +5 Yrs, OBC +3 Yrs</span>
                   </td>
                   <td class="p-4 sm:p-5">
                     <span
@@ -1393,8 +1502,7 @@
 
         <!-- Course Regulatory & Admission Notice -->
         <div
-          class="mt-6 p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center text-xs sm:text-sm text-slate-600 max-w-4xl mx-auto flex items-center justify-center gap-2.5">
-          <i data-lucide="shield-check" class="w-4 h-4 text-sky-600 shrink-0"></i>
+          class="mt-6 p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center text-xs sm:text-sm text-slate-600 max-w-4xl mx-auto">
           <span>Course eligibility, duration, intake, admission procedure, and professional registration requirements
             are strictly subject to governing bodies: INC New Delhi, RUHS Jaipur, RNC Jaipur, PCI New Delhi, and RANC,
             Rajasthan.</span>
@@ -1546,7 +1654,7 @@
                 class="w-full h-full object-contain" width="64" height="64" loading="lazy">
             </div>
             <div class="font-bold text-white text-sm">RUHS Jaipur</div>
-            <div class="text-[11px] text-slate-400">Rajasthan University of Health Sciences</div>
+            <div class="text-[0.6875rem] text-slate-400">Rajasthan University of Health Sciences</div>
           </div>
 
           <div
@@ -1557,7 +1665,7 @@
                 class="w-full h-full object-contain" width="64" height="64" loading="lazy">
             </div>
             <div class="font-bold text-white text-sm">INC New Delhi</div>
-            <div class="text-[11px] text-slate-400">Indian Nursing Council</div>
+            <div class="text-[0.6875rem] text-slate-400">Indian Nursing Council</div>
           </div>
 
           <div
@@ -1568,7 +1676,7 @@
                 class="w-full h-full object-contain" width="64" height="64" loading="lazy">
             </div>
             <div class="font-bold text-white text-sm">RNC Jaipur</div>
-            <div class="text-[11px] text-slate-400">Rajasthan Nursing Council</div>
+            <div class="text-[0.6875rem] text-slate-400">Rajasthan Nursing Council</div>
           </div>
 
           <div
@@ -1579,7 +1687,7 @@
                 class="w-full h-full object-contain" width="64" height="64" loading="lazy">
             </div>
             <div class="font-bold text-white text-sm">PCI New Delhi</div>
-            <div class="text-[11px] text-slate-400">Pharmacy Council of India</div>
+            <div class="text-[0.6875rem] text-slate-400">Pharmacy Council of India</div>
           </div>
 
           <div
@@ -1590,7 +1698,7 @@
                 class="w-full h-full object-contain" width="64" height="64" loading="lazy">
             </div>
             <div class="font-bold text-white text-sm">RANC, Rajasthan</div>
-            <div class="text-[11px] text-slate-400">Rajasthan Ayurved Nursing Council</div>
+            <div class="text-[0.6875rem] text-slate-400">Rajasthan Ayurved Nursing Council</div>
           </div>
 
         </div>
@@ -2055,7 +2163,7 @@
                 <i data-lucide="users" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Community Health</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Public health outreach, CHCs, PHCs, sub-centres, and
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Public health outreach, CHCs, PHCs, sub-centres, and
                 state preventive health programmes.</p>
             </div>
 
@@ -2066,7 +2174,7 @@
                 <i data-lucide="stethoscope" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Clinical Nursing</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Multi-specialty bedside patient care in critical care
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Multi-specialty bedside patient care in critical care
                 (ICU), emergency, and operation theatres.</p>
             </div>
 
@@ -2077,7 +2185,7 @@
                 <i data-lucide="factory" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Industrial Nursing</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Occupational healthcare units within factories,
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Occupational healthcare units within factories,
                 corporate manufacturing hubs, and industrial zones.</p>
             </div>
 
@@ -2089,7 +2197,7 @@
                 <i data-lucide="shield-check" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Occupational Nursing</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Corporate employee wellness, ergonomic workplace health
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Corporate employee wellness, ergonomic workplace health
                 monitoring, and emergency response.</p>
             </div>
 
@@ -2100,7 +2208,7 @@
                 <i data-lucide="graduation-cap" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Teaching in Nursing</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Academic faculty positions including Clinical
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Academic faculty positions including Clinical
                 Instructor, Tutor, Lecturer, and Professor.</p>
             </div>
 
@@ -2111,7 +2219,7 @@
                 <i data-lucide="clipboard-check" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Nursing Administration</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Hospital nursing leadership, ward supervisors, nursing
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Hospital nursing leadership, ward supervisors, nursing
                 superintendents, and CNO roles.</p>
             </div>
 
@@ -2122,7 +2230,7 @@
                 <i data-lucide="school" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">School Health</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">School health clinic management, routine adolescent
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">School health clinic management, routine adolescent
                 wellness checkups, and vaccination drives.</p>
             </div>
 
@@ -2134,7 +2242,7 @@
                 <i data-lucide="award" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Military Nursing (MNS)</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Commissioned officer appointments in the Military
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Commissioned officer appointments in the Military
                 Nursing Services of Indian Army, Navy, and Airforce.</p>
             </div>
 
@@ -2145,7 +2253,7 @@
                 <i data-lucide="microscope" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Research Opportunities</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Higher educational advancement in M.Sc. Nursing, Ph.D.
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Higher educational advancement in M.Sc. Nursing, Ph.D.
                 in Nursing, clinical trials, and healthcare research.</p>
             </div>
 
@@ -2156,7 +2264,7 @@
                 <i data-lucide="globe" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Nursing Service Abroad</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Global career pathways across the UK (NHS), Canada,
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Global career pathways across the UK (NHS), Canada,
                 Australia, USA, and Gulf countries.</p>
             </div>
 
@@ -2167,7 +2275,7 @@
                 <i data-lucide="home" class="w-4 h-4"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm">Home Care Nursing</h4>
-              <p class="text-[11px] text-slate-600 leading-snug">Personalized in-home clinical care, geriatric nursing
+              <p class="text-[0.6875rem] text-slate-600 leading-snug">Personalized in-home clinical care, geriatric nursing
                 support, palliative care, and post-surgery patient monitoring.</p>
             </div>
 
@@ -2245,7 +2353,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">AIIMS</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">All India Institute of Medical Sciences</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">All India Institute of Medical Sciences</div>
             </div>
           </div>
 
@@ -2258,7 +2366,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">SMS Hospital</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Sawai Man Singh Hospital, Jaipur</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Sawai Man Singh Hospital, Jaipur</div>
             </div>
           </div>
 
@@ -2271,7 +2379,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Indian Railways</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Railway Health Services</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Railway Health Services</div>
             </div>
           </div>
 
@@ -2284,7 +2392,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">JK Lone Hospital</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Jaipur Apex Pediatric Centre</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Jaipur Apex Pediatric Centre</div>
             </div>
           </div>
 
@@ -2297,7 +2405,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">BL Kapoor Hospital</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">BLK-Max Super Speciality, Delhi</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">BLK-Max Super Speciality, Delhi</div>
             </div>
           </div>
 
@@ -2310,7 +2418,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Military Services</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Indian Army, Navy, Airforce</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Indian Army, Navy, Airforce</div>
             </div>
           </div>
 
@@ -2323,7 +2431,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Medanta</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">The Medicity Hospitals</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">The Medicity Hospitals</div>
             </div>
           </div>
 
@@ -2336,7 +2444,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Fortis Hospital</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Fortis Healthcare Network</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Fortis Healthcare Network</div>
             </div>
           </div>
 
@@ -2349,7 +2457,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Safdarjung Hospital</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Central Govt. Hospital, Delhi</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Central Govt. Hospital, Delhi</div>
             </div>
           </div>
 
@@ -2362,7 +2470,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Max Healthcare</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Super Speciality Hospitals</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Super Speciality Hospitals</div>
             </div>
           </div>
 
@@ -2375,7 +2483,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Govt. CHO Posts</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Community Health Officer (NHM)</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Community Health Officer (NHM)</div>
             </div>
           </div>
 
@@ -2388,7 +2496,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Narayana Health</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Narayana Hrudayalaya Hospitals</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Narayana Hrudayalaya Hospitals</div>
             </div>
           </div>
 
@@ -2401,7 +2509,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Park Hospital</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Multi Super Speciality Hospital</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Multi Super Speciality Hospital</div>
             </div>
           </div>
 
@@ -2414,7 +2522,7 @@
             </div>
             <div>
               <div class="font-bold text-white text-xs sm:text-sm">Apollo Hospitals</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Apollo Healthcare Network</div>
+              <div class="text-[0.625rem] text-slate-400 mt-0.5">Apollo Healthcare Network</div>
             </div>
           </div>
 
@@ -3225,7 +3333,8 @@
       <!-- Copyright & Bottom Links Flex Container -->
       <div
         class="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-sm sm:text-base text-slate-400 font-medium">
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 text-center lg:text-left">
+        <div
+          class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 text-center lg:text-left">
           <span>
             © 2026 All Rights Reserved.
           </span>
