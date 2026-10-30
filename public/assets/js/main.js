@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
 
         <button type="submit"
-          class="w-full py-3.5 bg-sky-600 hover:bg-sky-500 active:scale-95 text-white font-semibold text-base rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+          class="btn-creative w-full py-3.5 text-white font-bold text-base shadow-md cursor-pointer">
           Submit Enquiry
         </button>
       </form>
